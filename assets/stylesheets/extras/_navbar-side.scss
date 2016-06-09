@@ -1,0 +1,16 @@
+.navbar-side {
+	&.navbar {
+		width: 250px;
+		height: 100vh;
+		position: fixed;
+
+		.navbar-header {
+			float: none;
+		}
+
+		.navbar-nav > li{
+			float: none;
+		}
+
+	}
+}

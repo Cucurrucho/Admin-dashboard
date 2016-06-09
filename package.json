@@ -1,8 +1,9 @@
 {
   "description": "Admin-dashboard",
   "devDependencies": {
-    "gulp-sass": "*",
+    "gulp": "^3.9.1",
     "gulp-notify": "*",
+    "gulp-sass": "*",
     "gulp-sourcemaps": "*"
   }
 }
