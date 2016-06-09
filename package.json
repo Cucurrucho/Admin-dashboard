@@ -1,0 +1,8 @@
+{
+  "description": "Admin-dashboard",
+  "devDependencies": {
+    "gulp-sass": "*",
+    "gulp-notify": "*",
+    "gulp-sourcemaps": "*"
+  }
+}
