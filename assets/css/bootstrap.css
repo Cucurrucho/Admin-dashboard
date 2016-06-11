@@ -5825,5 +5825,33 @@ button.close {
     float: none; }
   .navbar-side.navbar .navbar-nav > li {
     float: none; }
+  .navbar-side.navbar .navbar-nav {
+    width: 245px;
+    margin: 7.5px -15px; }
+  .navbar-side.navbar .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none; }
+  .navbar-side.navbar .navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .navbar-side.navbar .navbar-form {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 10px 15px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+    margin-top: 8px;
+    margin-bottom: 8px; }
+
+.navbar-side.navbar-inverse .dropdown-menu > li > a {
+  color: #9d9d9d; }
+
+.navbar-side.navbar-inverse .divider {
+  background-color: #090909; }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */
