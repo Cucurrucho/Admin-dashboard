@@ -5854,7 +5854,8 @@ button.close {
 .navbar-side.navbar-inverse .divider {
   background-color: #090909; }
 
-.container-wrapper {
-  margin-left: 265px; }
+.content-wrapper {
+  margin-left: 250px;
+  padding-left: 15px; }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */
