@@ -5855,6 +5855,7 @@ button.close {
   background-color: #090909; }
 
 .container-wrapper {
-  margin-left: 265px; }
+  margin-left: 250px;
+  padding-left: 15px; }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */
