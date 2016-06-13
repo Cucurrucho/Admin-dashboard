@@ -1,4 +1,14 @@
 .content-wrapper {
   margin-left: $navbar-side-width;
   padding-left: 15px;
+  &.open {
+    margin-left: $navbar-side-small-width;
+  }
+
+  @media (max-width: $grid-float-breakpoint) {
+    margin-left: $navbar-side-small-width;
+    &.open {
+      margin-left: auto;
+    }
+  }
 }
