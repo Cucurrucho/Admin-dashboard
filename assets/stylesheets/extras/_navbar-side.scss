@@ -1,22 +1,22 @@
 .navbar-side {
-	&.navbar {
-		width: $navbar-side-width;
-		height: 100vh;
-		position: fixed;
+  &.collapse {
+    &.in {
+      &.navbar {
+        width: $navbar-side-width;
+        height: $navbar-side-highet;
+        position: fixed;
 
-		.navbar-header {
-			float: none;
-		}
-
-		.navbar-nav > li{
-			float: none;
-
-		}
-        .navbar-nav {
-          width: 245px;
-          margin: 7.5px -15px;
+        .navbar-header {
+          float: none;
         }
 
+        .navbar-nav > li {
+          float: none;
+        }
+        .navbar-nav {
+          width: $navbar-side-width -5px;
+          margin: 7.5px -15px;
+        }
         .navbar-nav .open .dropdown-menu {
           position: static;
           float: none;
@@ -26,7 +26,6 @@
           border: 0;
           box-shadow: none;
         }
-
         .navbar-nav > li > .dropdown-menu {
           margin-top: 0;
           border-top-right-radius: 0;
@@ -40,14 +39,77 @@
           margin-top: 8px;
           margin-bottom: 8px;
         }
-	}
-    &.navbar-inverse {
-      .dropdown-menu > li > a {
-        color: $navbar-inverse-color;
+      }
+      + .content-wrapper {
+        margin-left: $navbar-side-width;
+        padding-left: 15px;
+      }
+      @media (max-width: $grid-float-breakpoint) {
 
+        display: inline;
+        &.navbar {
+          width: $navbar-side-small-width;
+          height: $navbar-side-highet;
+          position: fixed;
+
+          .navbar-header {
+            float: none;
+          }
+
+          .navbar-nav > li {
+            float: none;
+
+          }
+          .navbar-nav {
+            width: $navbar-side-small-width -5px;
+            margin: 7.5px -15px;
+          }
+        }
+        + .content-wrapper {
+          margin-left: $navbar-side-small-width;
+          padding-left: 5px;
+        }
       }
-      .divider {
-        background-color: $navbar-inverse-border;
+    }
+    display: inline;
+      &.navbar {
+        width: $navbar-side-small-width;
+        height: $navbar-side-highet;
+        position: fixed;
+
+        .navbar-header {
+          float: none;
+        }
+
+        .navbar-nav > li {
+          float: none;
+
+        }
+        .navbar-nav {
+          width: $navbar-side-small-width -5px;
+          margin: 7.5px -15px;
+        }
       }
+    + .content-wrapper {
+      margin-left: $navbar-side-small-width;
+      padding-left: 5px;
+    }
+    @media (max-width: $grid-float-breakpoint) {
+
+      display: none;
+      + .content-wrapper {
+        margin-left: 0px;
+        padding-left: 0px;
+      }
+    }
+  }
+  &.navbar-inverse {
+    .dropdown-menu > li > a {
+      color: $navbar-inverse-color;
+
+    }
+    .divider {
+      background-color: $navbar-inverse-border;
+    }
   }
 }
