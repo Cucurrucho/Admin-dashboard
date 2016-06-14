@@ -9,16 +9,10 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-side ">
+<nav class="navbar navbar-inverse navbar-side collapse in" id="myNavbar">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <a class="navbar-brand" href="#">Brand</a>
         </div>
 
@@ -61,6 +55,12 @@
     </div><!-- /.container-fluid -->
 </nav>
 <div class="content-wrapper">
+    <button type="button" class="btn btn-danger btn-lg" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
     <div class="container-fluid">
         <div class="row">
             <div class="panel panel-default col-xs-12 col-md-6">
