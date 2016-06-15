@@ -3,6 +3,8 @@ var sass = require('gulp-sass');
 var notify = require("gulp-notify");
 var sourcemaps = require('gulp-sourcemaps');
 var hogan = require('gulp-hogan');
+var minifyjs = require('gulp-minify');
+var concat = require('gulp-concat');
 
 gulp.task('sass', function () {
     return gulp.src('assets/stylesheets/bootstrap.scss')
@@ -10,18 +12,27 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('assets/css/'))
-        .pipe(notify('SASS compiled'));
+        .pipe(notify({message: 'SASS compiled', onLast: true}));
+});
+
+gulp.task('js',function(){
+    return gulp.src('assets/javascripts/extras/*.js')
+        .pipe(minifyjs({noSource : true}))
+        .pipe(concat('main.js',{newLine: ''}))
+        .pipe(gulp.dest("assets/javascripts"))
+        .pipe(notify({message: 'Js Updated', onLast: true}));
 });
 
 gulp.task('hogan', function () {
     return gulp.src('assets/templates/*.html')
         .pipe(hogan({}, null, '.html'))
         .pipe(gulp.dest('public'))
-        .pipe(notify('Hogan compiled'));
+        .pipe(notify({message: 'Hogan compiled', onLast: true}));
 });
 
-gulp.task('default',['sass','hogan'],function(){
+gulp.task('default',['sass','hogan','js'],function(){
 
     gulp.watch("assets/stylesheets/extras/*.scss",['sass']);
+    gulp.watch("assets/javascripts/extras/*.js",['js']);
     gulp.watch("assets/templates/**/*.html",['hogan']);
 });
