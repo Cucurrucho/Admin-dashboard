@@ -2,7 +2,9 @@
   "description": "Admin-dashboard",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-hogan" : "*",
+    "gulp-concat": "^2.6.0",
+    "gulp-hogan": "*",
+    "gulp-minify": "0.0.12",
     "gulp-notify": "*",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*"
