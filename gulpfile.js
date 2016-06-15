@@ -12,7 +12,7 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('assets/css/'))
-        .pipe(notify('SASS compiled'));
+        .pipe(notify({message: 'SASS compiled', onLast: true}));
 });
 
 gulp.task('js',function(){
@@ -20,14 +20,14 @@ gulp.task('js',function(){
         .pipe(minifyjs({noSource : true}))
         .pipe(concat('main.js',{newLine: ''}))
         .pipe(gulp.dest("assets/javascripts"))
-        .pipe(notify('Js Updated'));
+        .pipe(notify({message: 'Js Updated', onLast: true}));
 });
 
 gulp.task('hogan', function () {
     return gulp.src('assets/templates/*.html')
         .pipe(hogan({}, null, '.html'))
         .pipe(gulp.dest('public'))
-        .pipe(notify('Hogan compiled'));
+        .pipe(notify({message: 'Hogan compiled', onLast: true}));
 });
 
 gulp.task('default',['sass','hogan','js'],function(){
