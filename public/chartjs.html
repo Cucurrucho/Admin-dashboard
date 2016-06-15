@@ -10,16 +10,10 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-<nav class="navbar navbar-inverse navbar-side ">
+<nav class="navbar navbar-inverse navbar-side collapse in" id="myNavbar">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
             <a class="navbar-brand" href="#">Brand</a>
         </div>
 
@@ -71,6 +65,50 @@
                 </div>
                 
                 <script src="../assets/javascripts/data/charts/chartjs/linechart.js"></script>
+            </div>
+            <div class="panel panel-default col-xs-12 col-md-6">
+                <div class="panel-heading">Line Chart</div>
+                <div class="panel-body">
+                    <canvas id="barChart" width="250" height="150"></canvas>
+                </div>
+                
+                <script src="../assets/javascripts/data/charts/chartjs/barchart.js"></script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default col-xs-12 col-md-6">
+                <div class="panel-heading">Radar Chart</div>
+                <div class="panel-body">
+                    <canvas id="radarChart" width="250" height="150"></canvas>
+                </div>
+                
+                <script src="../assets/javascripts/data/charts/chartjs/radarchart.js"></script>
+            </div>
+            <div class="panel panel-default col-xs-12 col-md-6">
+                <div class="panel-heading">Polar Area Chart</div>
+                <div class="panel-body">
+                    <canvas id="polarChart" width="250" height="150"></canvas>
+                </div>
+                
+                <script src="../assets/javascripts/data/charts/chartjs/polararea.js"></script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-default col-xs-12 col-md-6">
+                <div class="panel-heading">Donut Chart</div>
+                <div class="panel-body">
+                    <canvas id="donutChart" width="250" height="150"></canvas>
+                </div>
+                
+                <script src="../assets/javascripts/data/charts/chartjs/donutchart.js"></script>
+            </div>
+            <div class="panel panel-default col-xs-12 col-md-6">
+                <div class="panel-heading">Pie Chart</div>
+                <div class="panel-body">
+                    <canvas id="pieChart" width="250" height="150"></canvas>
+                </div>
+                
+                <script src="../assets/javascripts/data/charts/chartjs/pieChart.js"></script>
             </div>
         </div>
     </div>
