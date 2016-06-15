@@ -1,4 +1,4 @@
-var lineData = {
+var barData = {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
         {
@@ -22,7 +22,7 @@ var lineData = {
     ]
 };
 
-var lineOptions = {
+var barOptions = {
     tooltips: {
         mode: 'label'
     },
@@ -36,9 +36,8 @@ var lineOptions = {
     }
 };
 
-new Chart($("#lineChart"),{
-    type: 'line',
-    data: lineData,
-    options: lineOptions,
-
+new Chart($("#barChart"),{
+    type: 'bar',
+    data: barData,
+    options: barOptions,
 });
