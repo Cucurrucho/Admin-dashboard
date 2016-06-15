@@ -5818,7 +5818,7 @@ button.close {
     display: none !important; } }
 
 .navbar-side {
-  transition: width 2s; }
+  transition: width 0.7s; }
   .navbar-side.collapse {
     display: inline; }
     .navbar-side.collapse.in.navbar {
@@ -5942,11 +5942,11 @@ button.close {
 .content-wrapper {
   margin-left: 250px;
   padding-left: 15px;
-  transition: margin-left 2s; }
+  transition: margin-left 0.7s; }
   @media (max-width: 768px) {
     .content-wrapper {
       margin-left: 80px;
       padding-left: 5px;
-      transition: margin-left 2s; } }
+      transition: margin-left 0.7s; } }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */
