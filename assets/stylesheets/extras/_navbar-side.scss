@@ -38,6 +38,9 @@
 			background-color: transparent;
 			border: 0;
 			box-shadow: none;
+            .divider {
+              width: $navbar-side-width - 2px;
+            }
 		  }
 		  .navbar-nav > li > .dropdown-menu {
 			margin-top: 0;
@@ -53,7 +56,7 @@
 			margin-bottom: 8px;
 		  }
           .divider {
-            width: $navbar-side-width - 2px;;
+            width: $navbar-side-width - 2px;
           }
           .form-control {
             width: $navbar-side-width * 0.75;
@@ -98,19 +101,42 @@
               display: block;
             }
             .navbar-nav .open .dropdown-menu {
-              position: static;
-              float: none;
-              width: auto;
-              min-width: 0px;
-              margin-top: 0;
-              background-color: transparent;
-              border: 0;
-              box-shadow: none;
-            }
-            .navbar-nav > li > .dropdown-menu {
-              margin-top: 0;
-              border-top-right-radius: 0;
-              border-top-left-radius: 0;
+              position: absolute;
+              top: 100%;
+              left: 0;
+              z-index: 1000;
+              display: block;
+              float: left;
+              min-width: 160px;
+              padding: 5px 0;
+              margin: 2px 0 0;
+              list-style: none;
+              font-size: 14px;
+              text-align: left;
+              background-color: #fff;
+              border: 1px solid #ccc;
+              border: 1px solid rgba(0, 0, 0, 0.15);
+              border-radius: 4px;
+              -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+              box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+              background-clip: padding-box;
+              .divider {
+                width: $navbar-side-width - 2px;
+              }
+              &.small-nav-drop {
+                position: static;
+                float: none;
+                width: auto;
+                min-width: 0px;
+                margin-top: 0;
+                background-color: transparent;
+                border: 0;
+                box-shadow: none;
+
+                .divider {
+                  width: $navbar-side-small-width - 2px;
+                }
+              }
             }
 
             .divider {
@@ -159,15 +185,27 @@
             width: $navbar-side-small-width - 2px;
 			margin: 7.5px -15px;
 		  }
-          .navbar-nav .open .dropdown-menu {
-            position: static;
-            float: none;
-            width: auto;
-            min-width: 0px;
-            margin-top: 0;
-            background-color: transparent;
-            border: 0;
-            box-shadow: none;
+
+          .dropdown-menu {
+
+            .divider {
+              width: $navbar-side-width;
+            }
+
+            &.small-nav-drop {
+              position: static;
+              float: none;
+              width: auto;
+              min-width: 0px;
+              margin-top: 0;
+              background-color: transparent;
+              border: 0;
+              box-shadow: none;
+
+              .divider {
+                width: $navbar-side-small-width - 2px;
+              }
+            }
           }
           .navbar-nav > li > .dropdown-menu {
             margin-top: 0;
