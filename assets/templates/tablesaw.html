@@ -5,28 +5,29 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                {{>charts/chartjs/linechart}}
+                {{>tables/tablesaw/stackonly}}
             </div>
             <div class="col-xs-12 col-md-6">
-                {{>charts/chartjs/barchart}}
+                {{>tables/tablesaw/sortable}}
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                {{>charts/chartjs/radarchart}}
+                {{>tables/tablesaw/toggle}}
             </div>
             <div class="col-xs-12 col-md-6">
-                {{>charts/chartjs/polararea}}
+                {{>tables/tablesaw/swipe}}
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                {{>charts/chartjs/donutChart}}
+                {{>tables/tablesaw/modeswitch}}
             </div>
             <div class="col-xs-12 col-md-6">
-                {{>charts/chartjs/pieChart}}
+                {{>tables/tablesaw/kitchensink}}
             </div>
         </div>
-    </div>
 </div>
+<script src="../assets/javascripts/data/tables/tablesaw/init.js"></script>
+
 {{>partials/footer}}
