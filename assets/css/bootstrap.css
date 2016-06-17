@@ -6712,4 +6712,9 @@ table.tablesaw thead td {
   cursor: default;
   pointer-events: none; }
 
+.jqstooltip {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
 /*# sourceMappingURL=maps/bootstrap.css.map */
