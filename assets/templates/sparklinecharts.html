@@ -1,0 +1,39 @@
+{{>partials/header}}
+{{>partials/navbar}}
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                {{>charts/sparkline/linechart}}
+            </div>
+            <div class="col-xs-12 col-md-6">
+                {{>charts/sparkline/barchart}}
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    {{>charts/sparkline/tristatecharts}}
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    {{>charts/sparkline/discretecharts}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    {{>charts/sparkline/bulletgraphs}}
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    {{>charts/sparkline/piecharts}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    {{>charts/sparkline/boxplots}}
+                </div>
+            </div>
+    </div>
+    <script src="../assets/javascripts/data/charts/sparkline/init.js"></script>
+
+    {{>partials/footer}}
