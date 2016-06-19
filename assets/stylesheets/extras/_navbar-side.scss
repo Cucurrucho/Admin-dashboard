@@ -5,6 +5,7 @@
 		&.navbar {
           width: $navbar-side-width;
           height: $navbar-side-highet;
+          z-index: 1000;
           position: fixed;
 
           .hide-big-nav {
@@ -102,6 +103,7 @@
             }
             .navbar-nav .open .dropdown-menu {
               position: absolute;
+              clear: both;
               top: 100%;
               left: 0;
               z-index: 1000;

@@ -5824,6 +5824,7 @@ button.close {
     .navbar-side.collapse.in.navbar {
       width: 250px;
       height: 100vh !important;
+      z-index: 1000;
       position: fixed; }
       .navbar-side.collapse.in.navbar .hide-big-nav {
         display: none; }
@@ -5894,6 +5895,7 @@ button.close {
             display: block; }
           .navbar-side.collapse.in.navbar .navbar-nav .open .dropdown-menu {
             position: absolute;
+            clear: both;
             top: 100%;
             left: 0;
             z-index: 1000;
