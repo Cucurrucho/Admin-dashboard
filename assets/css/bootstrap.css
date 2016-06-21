@@ -5865,10 +5865,37 @@ button.close {
   .navbar-side.navbar.collapse .form-control {
     width: 70px;
     margin-bottom: 2px; }
+  .navbar-side.navbar.collapse.navbar-inverse .dropdown-menu > li > a {
+    color: #9d9d9d; }
+  .navbar-side.navbar.collapse.navbar-inverse .divider {
+    background-color: #090909; }
   .navbar-side.navbar.collapse + .content-wrapper {
     transition: width 0.35s;
     margin-left: 80px;
     padding-left: 5px; }
+  .navbar-side.navbar.collapse:not(.in) .open .dropdown-menu.popup-dropdown {
+    position: absolute;
+    clear: both;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box; }
+    .navbar-side.navbar.collapse:not(.in) .open .dropdown-menu.popup-dropdown .divider {
+      width: 248px; }
   .navbar-side.navbar.collapse.in {
     width: 250px; }
     .navbar-side.navbar.collapse.in .hide-big-nav {
@@ -5934,40 +5961,6 @@ button.close {
           width: 78px;
           margin: 7.5px -15px;
           display: block; }
-        .navbar-side.navbar.collapse.in .open .dropdown-menu {
-          position: absolute;
-          clear: both;
-          top: 100%;
-          left: 0;
-          z-index: 1000;
-          display: block;
-          float: left;
-          min-width: 160px;
-          padding: 5px 0;
-          margin: 2px 0 0;
-          list-style: none;
-          font-size: 14px;
-          text-align: left;
-          background-color: #fff;
-          border: 1px solid #ccc;
-          border: 1px solid rgba(0, 0, 0, 0.15);
-          border-radius: 4px;
-          -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-          background-clip: padding-box; }
-          .navbar-side.navbar.collapse.in .open .dropdown-menu .divider {
-            width: 248px; }
-          .navbar-side.navbar.collapse.in .open .dropdown-menu.small-nav-drop {
-            position: static;
-            float: none;
-            width: auto;
-            min-width: 0px;
-            margin-top: 0;
-            background-color: transparent;
-            border: 0;
-            box-shadow: none; }
-            .navbar-side.navbar.collapse.in .open .dropdown-menu.small-nav-drop .divider {
-              width: 78px; }
         .navbar-side.navbar.collapse.in .divider {
           width: 78px; }
         .navbar-side.navbar.collapse.in .navbar-form {
