@@ -229,6 +229,7 @@
 
 			&.collapse {
 				&.in {
+
 					width: $navbar-side-small-width;
 
 					.hide-small-nav {
@@ -267,27 +268,29 @@
 						width: $navbar-side-small-width - 10px;
 					}
 
-					&.popup-dropdown {
-						position: absolute;
-						min-width: $navbar-side-width;
-						top: 0;
-						left: $navbar-side-small-width - 5px;
-						background-color: $navbar-default-bg;
-						border: 1px solid $navbar-default-border;
-						border-radius: 4px;
-						box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+					.open .dropdown-menu{
+						&.popup-dropdown {
+							position: absolute;
+							min-width: $navbar-side-width;
+							top: 0;
+							left: $navbar-side-small-width - 5px;
+							background-color: $navbar-default-bg;
+							border: 1px solid $navbar-default-border;
+							border-radius: 4px;
+							box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
 
-						.divider {
-							width: $navbar-side-width - 2px;
-						}
+							.divider {
+								width: $navbar-side-width - 2px;
+							}
 
-						li > a {
-							color: $navbar-default-link-color;
-							width: auto;
+							li > a {
+								color: $navbar-default-link-color;
+								width: auto;
 
-							&:hover {
-								color: $navbar-default-link-hover-color;
-								background-color: $navbar-default-link-hover-bg;
+								&:hover {
+									color: $navbar-default-link-hover-color;
+									background-color: $navbar-default-link-hover-bg;
+								}
 							}
 						}
 					}
