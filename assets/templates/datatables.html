@@ -1,0 +1,32 @@
+{{>partials/header}}
+{{>partials/navbar}}
+
+<div class="content-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                {{>tables/datatables/basicdatatable}}
+            </div>
+            <div class="col-xs-12 col-md-6">
+                {{>tables/datatables/scrollabletable}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                {{>tables/datatables/bordereddatatable}}
+            </div>
+            <div class="col-xs-12 col-md-6">
+                {{>tables/datatables/buttontable}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+                {{>tables/datatables/cellreordertable}}
+            </div>
+            <div class="col-xs-12 col-md-6">
+                {{>tables/datatables/rowgruping-pagelength-datatable}}
+            </div>
+        </div>
+    </div>
+</div>
+{{>partials/footer}}
