@@ -5,11 +5,16 @@ var sourcemaps = require('gulp-sourcemaps');
 var hogan = require('gulp-hogan');
 var minifyjs = require('gulp-minify');
 var concat = require('gulp-concat');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', function () {
     return gulp.src('assets/stylesheets/bootstrap.scss')
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+/*        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))*/
         .pipe(sourcemaps.write('maps'))
         .pipe(gulp.dest('assets/css/'))
         .pipe(notify({message: 'SASS compiled', onLast: true}));
