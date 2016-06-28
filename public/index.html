@@ -14,17 +14,19 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand hide-small-nav" href="#">Brand</a>
             <a class="navbar-brand hide-big-nav"><i class="fa fa-futbol-o" aria-hidden="true"></i></a>
+            <a class="navbar-brand hide-small-nav" href="#">Brand</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav">s
-            <li class="active"><a class="hide-small-nav" href="..\public\index.html">Home<span class="sr-only">(current)</span></a>
-            <a class="hide-big-nav" href="..\public\index.html"><i class="fa fa-home" aria-hidden="true"></i></a> </li>
+            <li class="active">
+                <a class="hide-big-nav" href="..\public\index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+                <a class="hide-small-nav" href="..\public\index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
             <li class="dropdown">
+                <a href="#" class="dropdown-toggle hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-table" aria-hidden="true"></i> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tables<span class="caret"></span></a>
-                <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-table" aria-hidden="true"></i> <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li>
                         <a href="..\public\statictables.html" class="hide-big-nav"><i class="fa fa-th-list" aria-hidden="true"></i></a>
@@ -41,8 +43,8 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts<span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts<span class="caret"></span></a>
                 <ul class="dropdown-menu popup-dropdown">
                     <li>
                         <a href="..\public\chartjs.html" class="hide-big-nav"><i class="fa fa-area-chart" aria-hidden="true"> Chartsjs</i></a>
