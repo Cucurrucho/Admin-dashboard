@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    $('#basicdatatable').DataTable({
-        responsive: true
-    });
+    if ( ! $.fn.DataTable.isDataTable( '#basicdatatable' ) ) {
+        $('#basicdatatable').DataTable({
+            responsive: true
+        });
+    }
 } );
