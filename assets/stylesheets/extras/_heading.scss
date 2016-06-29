@@ -1,0 +1,22 @@
+.heading {
+  margin-left: $navbar-side-width - 16px;
+  transition: width 0.4s, margin 0.4s, padding 0.4s;
+  height: 60px;
+  background-color: goldenrod;
+  width: 100%;
+  border: 1px solid $well-border;
+  border-radius: 0;
+  > button {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  @media (max-width: $grid-float-breakpoint) {
+    margin-left: $navbar-side-small-width - 16px;
+  }
+
+}
+
+.btn-heading {
+  @include button-variant($btn-default-color, goldenrod, $btn-default-color);
+}
