@@ -97,6 +97,11 @@
 			margin-left: $navbar-side-small-width;
 			padding-left: 5px;
 		}
+		+ .heading {
+			transition: width 0.4s, margin 0.4s, padding 0.4s;
+			transition-timing-function: ease-out;
+			margin-left: $navbar-side-small-width - 16px;
+		}
 
 		&.collapse {
 			&:not(.in) .open .dropdown-menu {
@@ -166,6 +171,10 @@
 				+ .content-wrapper {
 					margin-left: $navbar-side-width;
 					padding-left: 15px;
+				}
+
+				+ .heading {
+					margin-left: $navbar-side-width - 16px;
 				}
 			}
 
