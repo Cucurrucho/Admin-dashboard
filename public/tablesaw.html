@@ -64,8 +64,7 @@
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
     </div><!-- /.container-fluid -->
-</nav>
-<div class="content-wrapper">
+</nav><div class="content-wrapper">
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6">
@@ -740,10 +739,13 @@
                 </div>            </div>
         </div>
     </div>
+    <script src="../assets/javascripts/data/tables/tablesaw/init.js"></script>
 </div>
-<script src="../assets/javascripts/data/tables/tablesaw/init.js"></script>
-
-    <script src="../assets/javascripts/extras/Pjax.js"></script>
-    <script>new Pjax(["#myNavbar"],".content-wrapper")</script>
+<div class="pjax-loading-container">
+    <span class="pjax-loading-content">
+        <i class="fa fa-gear fa-spin"></i>
+    </span>
+</div>
+    <script>new Pjax(["#myNavbar"],".content-wrapper",".pjax-loading-container")</script>
 </body>
 </html>

@@ -96,6 +96,10 @@
 			transition-timing-function: ease-out;
 			margin-left: $navbar-side-small-width;
 			padding-left: 5px;
+			+ .pjax-loading-container {
+				margin-left: $navbar-side-small-width;
+				padding-left: 5px;
+			}
 		}
 
 		&.collapse {
@@ -166,6 +170,10 @@
 				+ .content-wrapper {
 					margin-left: $navbar-side-width;
 					padding-left: 15px;
+					+ .pjax-loading-container{
+						margin-left: $navbar-side-width;
+						padding-left: 15px;
+					}
 				}
 			}
 
@@ -245,6 +253,10 @@
 			+ .content-wrapper {
 				margin-left: 0px;
 				padding-left: 0px;
+				+ .pjax-loading-container{
+					margin-left: 0px;
+					padding-left: 0px;
+				}
 			}
 
 			&.collapse {
@@ -322,6 +334,10 @@
 					+ .content-wrapper {
 						margin-left: $navbar-side-small-width;
 						padding-left: 5px;
+						+ .pjax-loading-container{
+							margin-left: $navbar-side-small-width;
+							padding-left: 5px;
+						}
 					}
 				}
 

@@ -1,8 +1,3 @@
-(function( $ ) {
-    $(function() {
-        /** This code runs when everything has been loaded on the page */
-        /* Inline sparklines take their values from the contents of the tag */
-        $('.sparklines').sparkline('html', { enableTagOptions: true });
-
-    });
-})( jQuery );
+$(document).on("ready pjax:success",function(){
+    $('.sparklines').sparkline('html', { enableTagOptions: true });
+});

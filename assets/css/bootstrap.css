@@ -5886,6 +5886,9 @@ button.close {
     transition-timing-function: ease-out;
     margin-left: 80px;
     padding-left: 5px; }
+    .navbar-side.navbar + .content-wrapper + .pjax-loading-container {
+      margin-left: 80px;
+      padding-left: 5px; }
   .navbar-side.navbar.collapse:not(.in) .open .dropdown-menu.popup-dropdown {
     position: absolute;
     min-width: 250px;
@@ -5929,6 +5932,9 @@ button.close {
     .navbar-side.navbar.collapse.in + .content-wrapper {
       margin-left: 250px;
       padding-left: 15px; }
+      .navbar-side.navbar.collapse.in + .content-wrapper + .pjax-loading-container {
+        margin-left: 250px;
+        padding-left: 15px; }
   .navbar-side.navbar.collapsing {
     width: 165px;
     transition-timing-function: ease-in; }
@@ -5976,6 +5982,9 @@ button.close {
       .navbar-side.navbar + .content-wrapper {
         margin-left: 0px;
         padding-left: 0px; }
+        .navbar-side.navbar + .content-wrapper + .pjax-loading-container {
+          margin-left: 0px;
+          padding-left: 0px; }
       .navbar-side.navbar.collapse.in {
         width: 80px; }
         .navbar-side.navbar.collapse.in .hide-small-nav {
@@ -6021,6 +6030,9 @@ button.close {
         .navbar-side.navbar.collapse.in + .content-wrapper {
           margin-left: 80px;
           padding-left: 5px; }
+          .navbar-side.navbar.collapse.in + .content-wrapper + .pjax-loading-container {
+            margin-left: 80px;
+            padding-left: 5px; }
       .navbar-side.navbar.collapsing {
         width: 40px; }
         .navbar-side.navbar.collapsing .hide-small-nav {
@@ -9205,7 +9217,8 @@ table.dataTable td {
   text-align: right; }
 
 .dataTables_wrapper .dataTables_filter input {
-  margin-left: 0.5em; }
+  margin-left: 0.5em;
+  max-width: 90%; }
 
 .dataTables_wrapper .dataTables_info {
   clear: both;
@@ -10101,5 +10114,16 @@ div.dataTables_wrapper span.select-item {
   div.dataTables_wrapper span.select-item {
     margin-left: 0;
     display: block; } }
+
+.pjax-loading-container {
+  display: none;
+  height: 100vh;
+  text-align: center; }
+
+.pjax-loading-content {
+  position: relative;
+  top: 40%; }
+  .pjax-loading-content .fa-spin {
+    font-size: 48px; }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */
