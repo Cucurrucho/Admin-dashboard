@@ -1,0 +1,14 @@
+.pjax-loading-container {
+	display: none;
+	height: 100vh;
+	text-align: center;
+}
+
+.pjax-loading-content {
+	position: relative;
+	top: 40%;
+
+	.fa-spin {
+		font-size: 48px;
+	}
+}

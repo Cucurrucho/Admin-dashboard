@@ -64,8 +64,7 @@
             <button type="submit" class="btn btn-default">Submit</button>
         </form>
     </div><!-- /.container-fluid -->
-</nav>
-<div class="content-wrapper">
+</nav><div class="content-wrapper">
     <div class="container-fluid">
         <div class="row">
             <div class="panel panel-default col-xs-12 col-md-6">
@@ -255,5 +254,11 @@
         </div>
     </div>
 </div>
+<div class="pjax-loading-container">
+    <span class="pjax-loading-content">
+        <i class="fa fa-gear fa-spin"></i>
+    </span>
+</div>
+    <script>new Pjax(["#myNavbar"],".content-wrapper",".pjax-loading-container")</script>
 </body>
 </html>

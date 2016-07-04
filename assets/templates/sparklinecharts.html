@@ -1,6 +1,5 @@
 {{>partials/header}}
 {{>partials/navbar}}
-
 <div class="content-wrapper">
     <div class="container-fluid">
         <div class="row">
@@ -33,7 +32,9 @@
                     {{>charts/sparkline/boxplots}}
                 </div>
             </div>
+        </div>
     </div>
     <script src="../assets/javascripts/data/charts/sparkline/init.js"></script>
-
-    {{>partials/footer}}
+</div>
+{{>partials/loading}}
+{{>partials/footer}}
