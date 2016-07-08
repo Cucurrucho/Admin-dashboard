@@ -10142,6 +10142,16 @@ div.dataTables_wrapper span.select-item {
   height: 60px;
   width: 105%;
   margin-bottom: 10px; }
+  .heading > * {
+    float: left;
+    margin: 10px; }
+  .heading .profile-img-heading {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 2px solid black; }
+  .heading .breadcrumb {
+    background-color: goldenrod; }
   @media (max-width: 768px) {
     .heading {
       width: 125%; } }
@@ -10149,8 +10159,7 @@ div.dataTables_wrapper span.select-item {
 .btn-heading {
   color: #333;
   background-color: goldenrod;
-  border-color: #ccc;
-  margin-top: 10px; }
+  border-color: #ccc; }
   .btn-heading:focus, .btn-heading.focus {
     color: #333;
     background-color: #ae8319;
@@ -10183,5 +10192,27 @@ div.dataTables_wrapper span.select-item {
   .btn-heading .badge {
     color: goldenrod;
     background-color: #333; }
+
+.extended-profile {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 4px;
+  top: 50px;
+  left: 50px;
+  width: 300px;
+  height: 200px;
+  z-index: 99999;
+  display: none;
+  background-color: #F0EBEB; }
+  .extended-profile .profile-img-extended {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    padding-right: 5px; }
+  .extended-profile > ul {
+    margin-top: 30px; }
+    .extended-profile > ul > li {
+      margin: 5px; }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */

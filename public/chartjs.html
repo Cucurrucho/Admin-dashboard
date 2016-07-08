@@ -20,7 +20,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav">s
-            <li class="active">
+            <li>
                 <a class="hide-big-nav" href="..\public\index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <a class="hide-small-nav" href="..\public\index.html">Home<span class="sr-only">(current)</span></a>
             </li>
@@ -67,9 +67,24 @@
 </nav><div class="content-wrapper">
     <div class="container-fluid">
             <div  class="heading">
-                <button type="button" id="nav-btn" class="fa fa-toggle-on fa-2x btn-heading" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-hidden="true">
-                    <script src="../assets/javascripts/data/heading/heading-button.js"></script>
+                <button type="button" id="nav-btn" class="fa fa-toggle-on fa-2x btn-heading" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-hidden="true" float="left">
                 </button>
+                <img class="img-circle img-responsive profile-img-heading profile-img">
+                <div class="extended-profile">
+                    <img class="img-responsive profile-img-extended profile-img">
+                    <ul>
+                        <li><a href="#">Link to profile page</a></li>
+                        <li>info about profile</li>
+                    </ul>
+                </div>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Charts</a></li>
+                </ol>
+                <script src="../assets/javascripts/data/heading/heading-button.js"></script>
+                <script src="../assets/javascripts/data/heading/show-profile.js"></script>
+                <script src="../assets/javascripts/data/heading/profile-img-src.js"></script>
             </div>        <div class="row">
             <div class="col-xs-12 col-md-6">
                 <div class="panel panel-default">
