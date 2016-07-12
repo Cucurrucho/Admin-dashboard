@@ -1,13 +1,20 @@
-window.onload = function(){
+$('.profile-img-heading').mouseenter(function () {
+    $('.extended-profile').show();
+    var mOver = false;
+    setTimeout(function () {
 
-    $('.profile-img-heading').each(function() {
+        if (!mOver) {
+            $('.extended-profile').hide();
+        }
 
-        $(this).mouseenter(function(){ $('.extended-profile').show(); });
-    });
-    $('.extended-profile').each(function () {
+    }, 2000);
+});
 
-        $(this).mouseleave(function(){ $('.extended-profile').hide(); });
 
-    })
+$('.extended-profile').mouseover(function () {
+    mOver = true;
+});
 
-}
+$('.extended-profile').mouseleave(function () {
+    $('.extended-profile').hide();
+});
