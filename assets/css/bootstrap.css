@@ -5970,7 +5970,7 @@ button.close {
       transition-timing-function: ease-in;
       padding-left: 7.5px; }
       .navbar-side.navbar.collapsing + .content-wrapper .heading {
-        margin-left: 27.5px; }
+        margin-left: -24.7px; }
   @media (max-width: 768px) {
     .navbar-side.navbar {
       width: 0px;
@@ -10140,10 +10140,10 @@ div.dataTables_wrapper span.select-item {
   margin-left: -30px;
   background-color: goldenrod;
   height: 60px;
-  width: 105%;
+  width: 110%;
   margin-bottom: 10px; }
   .heading > * {
-    float: left;
+    display: inline-block;
     margin: 10px; }
   .heading .profile-img-heading {
     width: 50px;
@@ -10151,10 +10151,11 @@ div.dataTables_wrapper span.select-item {
     margin-top: 5px;
     border: 2px solid black; }
   .heading .breadcrumb {
-    background-color: goldenrod; }
+    background-color: goldenrod;
+    margin-right: 10px; }
   @media (max-width: 768px) {
     .heading {
-      width: 125%; } }
+      width: 115%; } }
 
 .btn-heading {
   color: #333;
@@ -10214,5 +10215,11 @@ div.dataTables_wrapper span.select-item {
     margin-top: 30px; }
     .extended-profile > ul > li {
       margin: 5px; }
+  @media (max-width: 768px) {
+    .extended-profile {
+      top: 50px;
+      left: 0px;
+      margin: 0;
+      max-width: 100%; } }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */
