@@ -1,0 +1,66 @@
+.heading {
+	margin-left: -30px;
+	background-color: $heading-color;
+	height: 60px;
+	width: 110%;
+	margin-bottom: 10px;
+
+	> * {
+		display: inline-block;
+		margin: 10px;
+	}
+
+	.profile-img-heading {
+		width: 50px;
+		height: 50px;
+		margin-top: 5px;
+		border: 2px solid black;
+	}
+
+	.breadcrumb {
+		background-color: $heading-color;
+		margin-right: 10px;
+	}
+	@media (max-width: $grid-float-breakpoint) {
+		width: 115%;
+	}
+}
+
+.btn-heading {
+	@include button-variant($btn-default-color, $heading-color, $btn-default-color);
+}
+
+.extended-profile {
+	position: absolute;
+	border: 1px solid black;
+	border-radius: $navbar-border-radius;
+	top: 50px;
+	left: 50px;
+	width: 300px;
+	height: 200px;
+	z-index: 99999;
+	display: none;
+	background-color: #F0EBEB;
+
+	.profile-img-extended {
+		width: 100px;
+		height: 100px;
+		float: left;
+		margin: 20px;
+		padding-right: 5px;
+	}
+	> ul {
+		margin-top: 30px;
+
+		> li {
+			margin: 5px;
+		}
+	}
+	@media (max-width: $grid-float-breakpoint) {
+		top: 50px;
+		left: 0px;
+		margin: 0;
+		max-width: 100%;
+	}
+
+}

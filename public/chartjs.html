@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../assets/javascripts/jquery-2.2.4.min.js"></script>
     <script src="../assets/javascripts/bootstrap.min.js"></script>
     <script src="../assets/javascripts/main.js"></script>
     <title>Admin Dashboard</title>
@@ -20,7 +20,7 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <ul class="nav navbar-nav">s
-            <li class="active">
+            <li>
                 <a class="hide-big-nav" href="..\public\index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <a class="hide-small-nav" href="..\public\index.html">Home<span class="sr-only">(current)</span></a>
             </li>
@@ -66,7 +66,25 @@
     </div><!-- /.container-fluid -->
 </nav><div class="content-wrapper">
     <div class="container-fluid">
-        <div class="row">
+            <div  class="heading">
+                <button type="button" id="nav-btn" class="fa fa-toggle-on fa-2x btn-heading" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-hidden="true">
+                </button>
+                <img class="img-circle img-responsive profile-img-heading" src="../assets/images/profile_pic.jpg">
+                <div class="extended-profile">
+                    <img class="img-responsive profile-img-extended" src="../assets/images/profile_pic.jpg">
+                    <ul>
+                        <li><a href="#">Link to profile page</a></li>
+                        <li>info about profile</li>
+                    </ul>
+                </div>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Tables</a></li>
+                    <li><a href="#">Charts</a></li>
+                </ol>
+                <script src="../assets/javascripts/data/heading/heading-button.js"></script>
+                <script src="../assets/javascripts/data/heading/show-profile.js"></script>
+            </div>        <div class="row">
             <div class="col-xs-12 col-md-6">
                 <div class="panel panel-default">
                     <div class="panel-heading">Line Chart</div>
