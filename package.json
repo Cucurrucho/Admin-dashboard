@@ -5,9 +5,11 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
-    "gulp-hogan": "*",
+    "gulp-data": "^1.2.1",
     "gulp-minify": "0.0.12",
+    "gulp-mustache": "^2.2.0",
     "gulp-notify": "*",
+    "gulp-plumber": "^1.1.0",
     "gulp-sass": "*",
     "gulp-sourcemaps": "*"
   }
