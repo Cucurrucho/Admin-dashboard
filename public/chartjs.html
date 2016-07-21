@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../assets/javascripts/jquery-2.2.4.min.js"></script>
     <script src="../assets/javascripts/bootstrap.min.js"></script>
     <script src="../assets/javascripts/main.js"></script>
     <title>Admin Dashboard</title>
@@ -19,38 +19,38 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <ul class="nav navbar-nav">s
-            <li class="active">
+        <ul class="nav navbar-nav">
+            <li class="">
                 <a class="hide-big-nav" href="..\public\index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <a class="hide-small-nav" href="..\public\index.html">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown ">
                 <a href="#" class="dropdown-toggle hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-table" aria-hidden="true"></i> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tables<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li>
+                    <li class="">
                         <a href="..\public\statictables.html" class="hide-big-nav"><i class="fa fa-th-list" aria-hidden="true"></i></a>
                         <a href="..\public\statictables.html" class="hide-small-nav">Static Tables</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="..\public\tablesaw.html" class="hide-big-nav"><span class="glyphicon glyphicon-bed"></span></a>
                         <a href="..\public\tablesaw.html" class="hide-small-nav">Table Saw</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="..\public\datatables.html" class="hide-big-nav"><i class="fa fa-database" aria-hidden="true"></i></a>
                         <a href="..\public\datatables.html" class="hide-small-nav">Datatables</a>
                     </li>
                 </ul>
             </li>
-            <li class="dropdown">
+            <li class="dropdown open">
                 <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts<span class="caret"></span></a>
                 <ul class="dropdown-menu popup-dropdown">
-                    <li>
+                    <li class="">
                         <a href="..\public\chartjs.html" class="hide-big-nav"><i class="fa fa-area-chart" aria-hidden="true"> Chartsjs</i></a>
                         <a href="..\public\chartjs.html" class="hide-small-nav">Chartjs</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="..\public\sparklinecharts.html" class="hide-big-nav"><i class="fa fa-pie-chart" aria-hidden="true"> Inline Sparkline</i></a>
                         <a href="..\public\sparklinecharts.html" class="hide-small-nav">Inline Sparkline Charts</a>
                     </li>
@@ -68,68 +68,68 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Line Chart</div>
-                    <div class="panel-body">
-                        <canvas id="lineChart" width="250" height="150"></canvas>
-                    </div>
-                
-                    <script src="../assets/javascripts/data/charts/chartjs/linechart.js"></script>
-                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Line Chart</div>
+    <div class="panel-body">
+        <canvas id="lineChart" width="250" height="150"></canvas>
+    </div>
+
+    <script src="../assets/javascripts/data/charts/chartjs/linechart.js"></script>
+</div>
             </div>
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Line Chart</div>
-                    <div class="panel-body">
-                        <canvas id="barChart" width="250" height="150"></canvas>
-                    </div>
-                
-                    <script src="../assets/javascripts/data/charts/chartjs/barchart.js"></script>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Radar Chart</div>
-                    <div class="panel-body">
-                        <canvas id="radarChart" width="250" height="150"></canvas>
-                    </div>
-                
-                    <script src="../assets/javascripts/data/charts/chartjs/radarchart.js"></script>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Polar Area Chart</div>
-                    <div class="panel-body">
-                        <canvas id="polarChart" width="250" height="150"></canvas>
-                    </div>
-                
-                    <script src="../assets/javascripts/data/charts/chartjs/polararea.js"></script>
-                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Line Chart</div>
+    <div class="panel-body">
+        <canvas id="barChart" width="250" height="150"></canvas>
+    </div>
+
+    <script src="../assets/javascripts/data/charts/chartjs/barchart.js"></script>
+</div>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Donut Chart</div>
-                    <div class="panel-body">
-                        <canvas id="donutChart" width="250" height="150"></canvas>
-                    </div>
-                
-                    <script src="../assets/javascripts/data/charts/chartjs/donutchart.js"></script>
-                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Radar Chart</div>
+    <div class="panel-body">
+        <canvas id="radarChart" width="250" height="150"></canvas>
+    </div>
+
+    <script src="../assets/javascripts/data/charts/chartjs/radarchart.js"></script>
+</div>
             </div>
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Pie Chart</div>
-                    <div class="panel-body">
-                        <canvas id="pieChart" width="250" height="150"></canvas>
-                    </div>
-                
-                    <script src="../assets/javascripts/data/charts/chartjs/pieChart.js"></script>
-                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Polar Area Chart</div>
+    <div class="panel-body">
+        <canvas id="polarChart" width="250" height="150"></canvas>
+    </div>
+
+    <script src="../assets/javascripts/data/charts/chartjs/polararea.js"></script>
+</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6">
+<div class="panel panel-default">
+    <div class="panel-heading">Donut Chart</div>
+    <div class="panel-body">
+        <canvas id="donutChart" width="250" height="150"></canvas>
+    </div>
+
+    <script src="../assets/javascripts/data/charts/chartjs/donutchart.js"></script>
+</div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+<div class="panel panel-default">
+    <div class="panel-heading">Pie Chart</div>
+    <div class="panel-body">
+        <canvas id="pieChart" width="250" height="150"></canvas>
+    </div>
+
+    <script src="../assets/javascripts/data/charts/chartjs/pieChart.js"></script>
+</div>
             </div>
         </div>
     </div>

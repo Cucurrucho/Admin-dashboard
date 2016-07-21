@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../assets/javascripts/jquery-2.2.4.min.js"></script>
     <script src="../assets/javascripts/bootstrap.min.js"></script>
     <script src="../assets/javascripts/main.js"></script>
     <title>Admin Dashboard</title>
@@ -19,38 +19,38 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <ul class="nav navbar-nav">s
-            <li class="active">
+        <ul class="nav navbar-nav">
+            <li class="">
                 <a class="hide-big-nav" href="..\public\index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <a class="hide-small-nav" href="..\public\index.html">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown ">
                 <a href="#" class="dropdown-toggle hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-table" aria-hidden="true"></i> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tables<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li>
+                    <li class="">
                         <a href="..\public\statictables.html" class="hide-big-nav"><i class="fa fa-th-list" aria-hidden="true"></i></a>
                         <a href="..\public\statictables.html" class="hide-small-nav">Static Tables</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="..\public\tablesaw.html" class="hide-big-nav"><span class="glyphicon glyphicon-bed"></span></a>
                         <a href="..\public\tablesaw.html" class="hide-small-nav">Table Saw</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="..\public\datatables.html" class="hide-big-nav"><i class="fa fa-database" aria-hidden="true"></i></a>
                         <a href="..\public\datatables.html" class="hide-small-nav">Datatables</a>
                     </li>
                 </ul>
             </li>
-            <li class="dropdown">
+            <li class="dropdown open">
                 <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts<span class="caret"></span></a>
                 <ul class="dropdown-menu popup-dropdown">
-                    <li>
+                    <li class="">
                         <a href="..\public\chartjs.html" class="hide-big-nav"><i class="fa fa-area-chart" aria-hidden="true"> Chartsjs</i></a>
                         <a href="..\public\chartjs.html" class="hide-small-nav">Chartjs</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="..\public\sparklinecharts.html" class="hide-big-nav"><i class="fa fa-pie-chart" aria-hidden="true"> Inline Sparkline</i></a>
                         <a href="..\public\sparklinecharts.html" class="hide-small-nav">Inline Sparkline Charts</a>
                     </li>
@@ -68,262 +68,262 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Line Chart</div>
-                    <div class="panel-body">
-                        <span class="sparklines" sparkType="line"><!-- 1,10,4,-4,5,1 --></span>
-                        <div class="panel-body table-responsive">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>Firstname</th>
-                                    <th>Lastname</th>
-                                    <th>Performance</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>John</td>
-                                    <td>Doe</td>
-                                    <td><span class="sparklines" sparkType="line" sparkHeight="50px" sparkWidth="50px" sparklineColor="red"  sparkMaxSpotColor="yellow" sparkSpotRadius="3"><!-- 1,10,4,-4,5,1 --></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mary</td>
-                                    <td>Moe</td>
-                                    <td><span class="sparklines" sparkType="line" sparkHeight="50px" sparkWidth="50px" sparklineColor="red"  sparkMinSpotColor="pink" sparkSpotRadius="3"><!-- 1,7,4,0,2,5 --></span></td>
-                                </tr>
-                                <tr>
-                                    <td>July</td>
-                                    <td>Dooley</td>
-                                    <td><span class="sparklines" sparkType="line" sparkHeight="50px" sparkWidth="50px" sparklineColor="red" ><!-- 15,2,3,5,1,10 --></span></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>            </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Line Chart</div>
+    <div class="panel-body">
+        <span class="sparklines" sparkType="line"><!-- 1,10,4,-4,5,1 --></span>
+        <div class="panel-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Performance</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td><span class="sparklines" sparkType="line" sparkHeight="50px" sparkWidth="50px" sparklineColor="red"  sparkMaxSpotColor="yellow" sparkSpotRadius="3"><!-- 1,10,4,-4,5,1 --></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td><span class="sparklines" sparkType="line" sparkHeight="50px" sparkWidth="50px" sparklineColor="red"  sparkMinSpotColor="pink" sparkSpotRadius="3"><!-- 1,7,4,0,2,5 --></span></td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td><span class="sparklines" sparkType="line" sparkHeight="50px" sparkWidth="50px" sparklineColor="red" ><!-- 15,2,3,5,1,10 --></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>            </div>
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Bar Chart</div>
-                    <div class="panel-body">
-                        <span class="sparklines" sparkType="bar"><!-- 1,10,4,-4,5,1 --></span>
-                        <div class="panel-body table-responsive">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>Firstname</th>
-                                    <th>Lastname</th>
-                                    <th>Performance</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>John</td>
-                                    <td>Doe</td>
-                                    <td><span class="sparklines" sparkType="bar" sparkHeight="50px" sparkWidth="50px" sparkBarColor="green" negBarColor="red"><!-- 1,10,4,-4,5,1 --></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mary</td>
-                                    <td>Moe</td>
-                                    <td><span class="sparklines" sparkType="bar" sparkHeight="50px" sparkWidth="50px" sparkBarColor="green" negBarColor="red"><!-- 1,7,4,0,2,5 --></span></td>
-                                </tr>
-                                <tr>
-                                    <td>July</td>
-                                    <td>Dooley</td>
-                                    <td><span class="sparklines" sparkType="bar" sparkHeight="50px" sparkWidth="50px" sparkBarColor="green" negBarColor="red"><!-- 15,2,3,5,1,10 --></span></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>            </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Bar Chart</div>
+    <div class="panel-body">
+        <span class="sparklines" sparkType="bar"><!-- 1,10,4,-4,5,1 --></span>
+        <div class="panel-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Performance</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td><span class="sparklines" sparkType="bar" sparkHeight="50px" sparkWidth="50px" sparkBarColor="green" negBarColor="red"><!-- 1,10,4,-4,5,1 --></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td><span class="sparklines" sparkType="bar" sparkHeight="50px" sparkWidth="50px" sparkBarColor="green" negBarColor="red"><!-- 1,7,4,0,2,5 --></span></td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td><span class="sparklines" sparkType="bar" sparkHeight="50px" sparkWidth="50px" sparkBarColor="green" negBarColor="red"><!-- 15,2,3,5,1,10 --></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>            </div>
         </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Tri-State Chart</div>
-                        <div class="panel-body">
-                            <span class="sparklines" sparkType="tristate"><!-- 0,1,0,-1,1 --></span>
-                            <div class="panel-body table-responsive">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Firstname</th>
-                                        <th>Lastname</th>
-                                        <th>Results</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td><span class="sparklines" sparkType="tristate" sparkHeight="50px" sparkWidth="50px" sparkPosBarColor="green" sparkNegegBarColor="red" sparkZeroBarColor="grey"><!-- 0,0,0,-1,-1 --></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td><span class="sparklines" sparkType="tristate" sparkHeight="50px" sparkWidth="50px" sparkPosBarColor="green" sparkNegegBarColor="red" sparkZeroBarColor="grey"><!-- -1,1,1,-1,1 --></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td><span class="sparklines" sparkType="tristate" sparkHeight="50px" sparkWidth="50px" sparkPosBarColor="green" sparkNegegBarColor="red" sparkZeroBarColor="grey"><!-- 0,-1,0,1,-1 --></span></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Tri-State Chart</div>
+    <div class="panel-body">
+        <span class="sparklines" sparkType="tristate"><!-- 0,1,0,-1,1 --></span>
+        <div class="panel-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Results</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td><span class="sparklines" sparkType="tristate" sparkHeight="50px" sparkWidth="50px" sparkPosBarColor="green" sparkNegegBarColor="red" sparkZeroBarColor="grey"><!-- 0,0,0,-1,-1 --></span></td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td><span class="sparklines" sparkType="tristate" sparkHeight="50px" sparkWidth="50px" sparkPosBarColor="green" sparkNegegBarColor="red" sparkZeroBarColor="grey"><!-- -1,1,1,-1,1 --></span></td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td><span class="sparklines" sparkType="tristate" sparkHeight="50px" sparkWidth="50px" sparkPosBarColor="green" sparkNegegBarColor="red" sparkZeroBarColor="grey"><!-- 0,-1,0,1,-1 --></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>                </div>
                 <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Discrete Chart</div>
-                        <div class="panel-body">
-                            <span class="sparklines" sparkType="discrete"><!-- 1,10,4,-4,5,1 --></span>
-                            <div class="panel-body table-responsive">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Firstname</th>
-                                        <th>Lastname</th>
-                                        <th>Performance</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td><span class="sparklines" sparkType="discrete" sparkHeight="50px" sparkLineColor="red"><!-- 1,10,4,-4,5,1 --></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td><span class="sparklines" sparkType="discrete" sparkHeight="50px" sparkThresholdValue="5" sparkThresholdColor="red"><!-- 1,7,4,0,2,5 --></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td><span class="sparklines" sparkType="discrete" sparkHeight="50px"><!-- 2,3,5,1,10 --></span></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Discrete Chart</div>
+    <div class="panel-body">
+        <span class="sparklines" sparkType="discrete"><!-- 1,10,4,-4,5,1 --></span>
+        <div class="panel-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Performance</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td><span class="sparklines" sparkType="discrete" sparkHeight="50px" sparkLineColor="red"><!-- 1,10,4,-4,5,1 --></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td><span class="sparklines" sparkType="discrete" sparkHeight="50px" sparkThresholdValue="5" sparkThresholdColor="red"><!-- 1,7,4,0,2,5 --></span></td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td><span class="sparklines" sparkType="discrete" sparkHeight="50px"><!-- 2,3,5,1,10 --></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>                </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Bullet Graph</div>
-                        <div class="panel-body">
-                            <span class="sparklines" sparkType="bullet"><!-- 6,10,3 --></span>
-                            <div class="panel-body table-responsive">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Firstname</th>
-                                        <th>Lastname</th>
-                                        <th>Performance</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td><span class="sparklines" sparkType="bullet" sparkTargetColor="pink"><!-- 10,12,4,6,2 --></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td><span class="sparklines" sparkType="bullet" sparkTargetColor="pink" sparkperformanceColor="brown"><!-- 8,10,4 --></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td><span class="sparklines" sparkType="bullet" sparkWidth="40px"><!-- 6,10,3 --></span></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Bullet Graph</div>
+    <div class="panel-body">
+        <span class="sparklines" sparkType="bullet"><!-- 6,10,3 --></span>
+        <div class="panel-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Performance</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td><span class="sparklines" sparkType="bullet" sparkTargetColor="pink"><!-- 10,12,4,6,2 --></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td><span class="sparklines" sparkType="bullet" sparkTargetColor="pink" sparkperformanceColor="brown"><!-- 8,10,4 --></span></td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td><span class="sparklines" sparkType="bullet" sparkWidth="40px"><!-- 6,10,3 --></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>                </div>
                 <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Pie Chart</div>
-                        <div class="panel-body">
-                            <span class="sparklines" sparkType="pie"><!-- 3,2,1 --></span>
-                            <div class="panel-body table-responsive">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th>Firstname</th>
-                                        <th>Lastname</th>
-                                        <th>Results</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>John</td>
-                                        <td>Doe</td>
-                                        <td><span class="sparklines" sparkType="pie" sparkHeight="50px" sparkWidth="50px" SparksliceColors="[red,black,yellow]"><!-- 5,5,5 --></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mary</td>
-                                        <td>Moe</td>
-                                        <td><span class="sparklines" sparkType="pie" sparkHeight="50px" sparkWidth="50px" SparksliceColors="[red,green,yellow]" sparkBorderWidth="2"><!-- 4,10,5 --></span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>July</td>
-                                        <td>Dooley</td>
-                                        <td><span class="sparklines" sparkType="pie" sparkHeight="50px" sparkWidth="50px" SparksliceColors="[red,black,yellow]" sparkBorderWidth="3" sparkBorderColor="green"><!-- 5,10,6 --></span></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Pie Chart</div>
+    <div class="panel-body">
+        <span class="sparklines" sparkType="pie"><!-- 3,2,1 --></span>
+        <div class="panel-body table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Results</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td><span class="sparklines" sparkType="pie" sparkHeight="50px" sparkWidth="50px" SparksliceColors="[red,black,yellow]"><!-- 5,5,5 --></span></td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td><span class="sparklines" sparkType="pie" sparkHeight="50px" sparkWidth="50px" SparksliceColors="[red,green,yellow]" sparkBorderWidth="2"><!-- 4,10,5 --></span></td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td><span class="sparklines" sparkType="pie" sparkHeight="50px" sparkWidth="50px" SparksliceColors="[red,black,yellow]" sparkBorderWidth="3" sparkBorderColor="green"><!-- 5,10,6 --></span></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>                </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Box Plots</div>
-                        <div class="panel-body">
-                            <span class="sparklines" sparkType="box"><!-- 3,2,1,5,7 --></span>
-                        </div>
-                        <div class="panel-body table-responsive">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>Firstname</th>
-                                    <th>Lastname</th>
-                                    <th>Performance</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>John</td>
-                                    <td>Doe</td>
-                                    <td><span class="sparklines" sparkType="box" sparkHeight="50px" sparkWidth="50px" sparkBoxLineColor="green"><!-- 1,10,4,-4,5,1 --></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mary</td>
-                                    <td>Moe</td>
-                                    <td><span class="sparklines" sparkType="box" sparkHeight="50px" sparkWidth="50px" sparkBoxfillColor="green" sparkWhiskerColor="violet"	><!-- 1,7,4,0,2,5 --></span></td>
-                                </tr>
-                                <tr>
-                                    <td>July</td>
-                                    <td>Dooley</td>
-                                    <td><span class="sparklines" sparkType="box" sparkHeight="50px" sparkWidth="50px" sparkMedianColor="orange" sparkTarget="6"><!-- 15,2,3,5,1,10 --></span></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>                </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Box Plots</div>
+    <div class="panel-body">
+        <span class="sparklines" sparkType="box"><!-- 3,2,1,5,7 --></span>
+    </div>
+    <div class="panel-body table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Performance</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td><span class="sparklines" sparkType="box" sparkHeight="50px" sparkWidth="50px" sparkBoxLineColor="green"><!-- 1,10,4,-4,5,1 --></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td><span class="sparklines" sparkType="box" sparkHeight="50px" sparkWidth="50px" sparkBoxfillColor="green" sparkWhiskerColor="violet"	><!-- 1,7,4,0,2,5 --></span></td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td><span class="sparklines" sparkType="box" sparkHeight="50px" sparkWidth="50px" sparkMedianColor="orange" sparkTarget="6"><!-- 15,2,3,5,1,10 --></span></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>                </div>
             </div>
         </div>
     </div>

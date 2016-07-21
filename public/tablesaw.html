@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="../assets/javascripts/jquery-2.2.4.min.js"></script>
     <script src="../assets/javascripts/bootstrap.min.js"></script>
     <script src="../assets/javascripts/main.js"></script>
     <title>Admin Dashboard</title>
@@ -19,38 +19,38 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <ul class="nav navbar-nav">s
-            <li class="active">
+        <ul class="nav navbar-nav">
+            <li class="">
                 <a class="hide-big-nav" href="..\public\index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <a class="hide-small-nav" href="..\public\index.html">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown open">
                 <a href="#" class="dropdown-toggle hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-table" aria-hidden="true"></i> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tables<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li>
+                    <li class="">
                         <a href="..\public\statictables.html" class="hide-big-nav"><i class="fa fa-th-list" aria-hidden="true"></i></a>
                         <a href="..\public\statictables.html" class="hide-small-nav">Static Tables</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="..\public\tablesaw.html" class="hide-big-nav"><span class="glyphicon glyphicon-bed"></span></a>
                         <a href="..\public\tablesaw.html" class="hide-small-nav">Table Saw</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="..\public\datatables.html" class="hide-big-nav"><i class="fa fa-database" aria-hidden="true"></i></a>
                         <a href="..\public\datatables.html" class="hide-small-nav">Datatables</a>
                     </li>
                 </ul>
             </li>
-            <li class="dropdown">
+            <li class="dropdown ">
                 <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts<span class="caret"></span></a>
                 <ul class="dropdown-menu popup-dropdown">
-                    <li>
+                    <li class="">
                         <a href="..\public\chartjs.html" class="hide-big-nav"><i class="fa fa-area-chart" aria-hidden="true"> Chartsjs</i></a>
                         <a href="..\public\chartjs.html" class="hide-small-nav">Chartjs</a>
                     </li>
-                    <li>
+                    <li class="">
                         <a href="..\public\sparklinecharts.html" class="hide-big-nav"><i class="fa fa-pie-chart" aria-hidden="true"> Inline Sparkline</i></a>
                         <a href="..\public\sparklinecharts.html" class="hide-small-nav">Inline Sparkline Charts</a>
                     </li>
@@ -68,675 +68,675 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Stack Table</div>
-                    <div class="panel-body">
-                        <table data-tablesaw-mode="stack" class="tablesaw tablesaw-stack">
-                            <thead>
-                            <tr>
-                                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
-                                    class="tablesaw-cell-persist">Movie Title
-                                </th>
-                                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
-                                    scope="col">Rank
-                                </th>
-                                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
-                                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
-                                        title="Rotten Tomato Rating">Rating</abbr>
-                                </th>
-                                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
-                                </td>
-                                <td>1</td>
-                                <td>2009</td>
-                                <td>83%</td>
-                                <td>$2.7B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
-                                <td>2</td>
-                                <td>1997</td>
-                                <td>88%</td>
-                                <td>$2.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
-                                    Avengers</a></td>
-                                <td>3</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.5B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
-                                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
-                                <td>4</td>
-                                <td>2011</td>
-                                <td>96%</td>
-                                <td>$1.3B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
-                                </td>
-                                <td>5</td>
-                                <td>2013</td>
-                                <td>89%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
-                                </td>
-                                <td>6</td>
-                                <td>2013</td>
-                                <td>78%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
-                                    Moon</a></td>
-                                <td>7</td>
-                                <td>2011</td>
-                                <td>36%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
-                                    the
-                                    Rings: The Return of the King</a></td>
-                                <td>8</td>
-                                <td>2003</td>
-                                <td>95%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
-                                <td>9</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
-                                    Extinction</a></td>
-                                <td>10</td>
-                                <td>2014</td>
-                                <td>18%</td>
-                                <td>$1.0B</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>            </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Stack Table</div>
+    <div class="panel-body">
+        <table data-tablesaw-mode="stack" class="tablesaw tablesaw-stack">
+            <thead>
+            <tr>
+                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
+                    class="tablesaw-cell-persist">Movie Title
+                </th>
+                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
+                    scope="col">Rank
+                </th>
+                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
+                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
+                        title="Rotten Tomato Rating">Rating</abbr>
+                </th>
+                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
+                </td>
+                <td>1</td>
+                <td>2009</td>
+                <td>83%</td>
+                <td>$2.7B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+                <td>2</td>
+                <td>1997</td>
+                <td>88%</td>
+                <td>$2.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
+                    Avengers</a></td>
+                <td>3</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.5B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
+                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
+                <td>4</td>
+                <td>2011</td>
+                <td>96%</td>
+                <td>$1.3B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
+                </td>
+                <td>5</td>
+                <td>2013</td>
+                <td>89%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
+                </td>
+                <td>6</td>
+                <td>2013</td>
+                <td>78%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
+                    Moon</a></td>
+                <td>7</td>
+                <td>2011</td>
+                <td>36%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
+                    the
+                    Rings: The Return of the King</a></td>
+                <td>8</td>
+                <td>2003</td>
+                <td>95%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
+                <td>9</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
+                    Extinction</a></td>
+                <td>10</td>
+                <td>2014</td>
+                <td>18%</td>
+                <td>$1.0B</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>            </div>
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Sortable Table</div>
-                    <div class="panel-body">
-                        <table data-tablesaw-sortable class="tablesaw">
-                            <thead>
-                            <tr>
-                                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
-                                    class="tablesaw-cell-persist">Movie Title
-                                </th>
-                                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
-                                    scope="col">Rank
-                                </th>
-                                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
-                                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
-                                        title="Rotten Tomato Rating">Rating</abbr>
-                                </th>
-                                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
-                                </td>
-                                <td>1</td>
-                                <td>2009</td>
-                                <td>83%</td>
-                                <td>$2.7B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
-                                <td>2</td>
-                                <td>1997</td>
-                                <td>88%</td>
-                                <td>$2.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
-                                    Avengers</a></td>
-                                <td>3</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.5B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
-                                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
-                                <td>4</td>
-                                <td>2011</td>
-                                <td>96%</td>
-                                <td>$1.3B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
-                                </td>
-                                <td>5</td>
-                                <td>2013</td>
-                                <td>89%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
-                                </td>
-                                <td>6</td>
-                                <td>2013</td>
-                                <td>78%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
-                                    Moon</a></td>
-                                <td>7</td>
-                                <td>2011</td>
-                                <td>36%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
-                                    the
-                                    Rings: The Return of the King</a></td>
-                                <td>8</td>
-                                <td>2003</td>
-                                <td>95%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
-                                <td>9</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
-                                    Extinction</a></td>
-                                <td>10</td>
-                                <td>2014</td>
-                                <td>18%</td>
-                                <td>$1.0B</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>            </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Sortable Table</div>
+    <div class="panel-body">
+        <table data-tablesaw-sortable class="tablesaw">
+            <thead>
+            <tr>
+                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
+                    class="tablesaw-cell-persist">Movie Title
+                </th>
+                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
+                    scope="col">Rank
+                </th>
+                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
+                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
+                        title="Rotten Tomato Rating">Rating</abbr>
+                </th>
+                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
+                </td>
+                <td>1</td>
+                <td>2009</td>
+                <td>83%</td>
+                <td>$2.7B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+                <td>2</td>
+                <td>1997</td>
+                <td>88%</td>
+                <td>$2.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
+                    Avengers</a></td>
+                <td>3</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.5B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
+                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
+                <td>4</td>
+                <td>2011</td>
+                <td>96%</td>
+                <td>$1.3B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
+                </td>
+                <td>5</td>
+                <td>2013</td>
+                <td>89%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
+                </td>
+                <td>6</td>
+                <td>2013</td>
+                <td>78%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
+                    Moon</a></td>
+                <td>7</td>
+                <td>2011</td>
+                <td>36%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
+                    the
+                    Rings: The Return of the King</a></td>
+                <td>8</td>
+                <td>2003</td>
+                <td>95%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
+                <td>9</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
+                    Extinction</a></td>
+                <td>10</td>
+                <td>2014</td>
+                <td>18%</td>
+                <td>$1.0B</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>            </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Toggle Mode Table</div>
-                    <div class="panel-body">
-                        <table data-tablesaw-mode="columntoggle" class="tablesaw">
-                            <thead>
-                            <tr>
-                                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
-                                    class="tablesaw-cell-persist">Movie Title
-                                </th>
-                                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
-                                    scope="col">Rank
-                                </th>
-                                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
-                                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
-                                        title="Rotten Tomato Rating">Rating</abbr>
-                                </th>
-                                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
-                                </td>
-                                <td>1</td>
-                                <td>2009</td>
-                                <td>83%</td>
-                                <td>$2.7B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
-                                <td>2</td>
-                                <td>1997</td>
-                                <td>88%</td>
-                                <td>$2.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
-                                    Avengers</a></td>
-                                <td>3</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.5B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
-                                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
-                                <td>4</td>
-                                <td>2011</td>
-                                <td>96%</td>
-                                <td>$1.3B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
-                                </td>
-                                <td>5</td>
-                                <td>2013</td>
-                                <td>89%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
-                                </td>
-                                <td>6</td>
-                                <td>2013</td>
-                                <td>78%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
-                                    Moon</a></td>
-                                <td>7</td>
-                                <td>2011</td>
-                                <td>36%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
-                                    the
-                                    Rings: The Return of the King</a></td>
-                                <td>8</td>
-                                <td>2003</td>
-                                <td>95%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
-                                <td>9</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
-                                    Extinction</a></td>
-                                <td>10</td>
-                                <td>2014</td>
-                                <td>18%</td>
-                                <td>$1.0B</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>            </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Toggle Mode Table</div>
+    <div class="panel-body">
+        <table data-tablesaw-mode="columntoggle" class="tablesaw">
+            <thead>
+            <tr>
+                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
+                    class="tablesaw-cell-persist">Movie Title
+                </th>
+                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
+                    scope="col">Rank
+                </th>
+                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
+                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
+                        title="Rotten Tomato Rating">Rating</abbr>
+                </th>
+                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
+                </td>
+                <td>1</td>
+                <td>2009</td>
+                <td>83%</td>
+                <td>$2.7B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+                <td>2</td>
+                <td>1997</td>
+                <td>88%</td>
+                <td>$2.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
+                    Avengers</a></td>
+                <td>3</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.5B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
+                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
+                <td>4</td>
+                <td>2011</td>
+                <td>96%</td>
+                <td>$1.3B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
+                </td>
+                <td>5</td>
+                <td>2013</td>
+                <td>89%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
+                </td>
+                <td>6</td>
+                <td>2013</td>
+                <td>78%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
+                    Moon</a></td>
+                <td>7</td>
+                <td>2011</td>
+                <td>36%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
+                    the
+                    Rings: The Return of the King</a></td>
+                <td>8</td>
+                <td>2003</td>
+                <td>95%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
+                <td>9</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
+                    Extinction</a></td>
+                <td>10</td>
+                <td>2014</td>
+                <td>18%</td>
+                <td>$1.0B</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>            </div>
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Swipe Table</div>
-                    <div class="panel-body">
-                        <table data-tablesaw-minimap data-tablesaw-mode="swipe" class="tablesaw tablesaw-swipe">
-                            <thead>
-                            <tr>
-                                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
-                                    class="tablesaw-cell-persist">Movie Title
-                                </th>
-                                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
-                                    scope="col">Rank
-                                </th>
-                                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
-                                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
-                                        title="Rotten Tomato Rating">Rating</abbr>
-                                </th>
-                                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
-                                </td>
-                                <td>1</td>
-                                <td>2009</td>
-                                <td>83%</td>
-                                <td>$2.7B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
-                                <td>2</td>
-                                <td>1997</td>
-                                <td>88%</td>
-                                <td>$2.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
-                                    Avengers</a></td>
-                                <td>3</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.5B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
-                                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
-                                <td>4</td>
-                                <td>2011</td>
-                                <td>96%</td>
-                                <td>$1.3B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
-                                </td>
-                                <td>5</td>
-                                <td>2013</td>
-                                <td>89%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
-                                </td>
-                                <td>6</td>
-                                <td>2013</td>
-                                <td>78%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
-                                    Moon</a></td>
-                                <td>7</td>
-                                <td>2011</td>
-                                <td>36%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
-                                    the
-                                    Rings: The Return of the King</a></td>
-                                <td>8</td>
-                                <td>2003</td>
-                                <td>95%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
-                                <td>9</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
-                                    Extinction</a></td>
-                                <td>10</td>
-                                <td>2014</td>
-                                <td>18%</td>
-                                <td>$1.0B</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>            </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Swipe Table</div>
+    <div class="panel-body">
+        <table data-tablesaw-minimap data-tablesaw-mode="swipe" class="tablesaw tablesaw-swipe">
+            <thead>
+            <tr>
+                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
+                    class="tablesaw-cell-persist">Movie Title
+                </th>
+                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
+                    scope="col">Rank
+                </th>
+                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
+                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
+                        title="Rotten Tomato Rating">Rating</abbr>
+                </th>
+                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
+                </td>
+                <td>1</td>
+                <td>2009</td>
+                <td>83%</td>
+                <td>$2.7B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+                <td>2</td>
+                <td>1997</td>
+                <td>88%</td>
+                <td>$2.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
+                    Avengers</a></td>
+                <td>3</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.5B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
+                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
+                <td>4</td>
+                <td>2011</td>
+                <td>96%</td>
+                <td>$1.3B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
+                </td>
+                <td>5</td>
+                <td>2013</td>
+                <td>89%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
+                </td>
+                <td>6</td>
+                <td>2013</td>
+                <td>78%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
+                    Moon</a></td>
+                <td>7</td>
+                <td>2011</td>
+                <td>36%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
+                    the
+                    Rings: The Return of the King</a></td>
+                <td>8</td>
+                <td>2003</td>
+                <td>95%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
+                <td>9</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
+                    Extinction</a></td>
+                <td>10</td>
+                <td>2014</td>
+                <td>18%</td>
+                <td>$1.0B</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>            </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Mode Switch Table</div>
-                    <div class="panel-body">
-                        <table data-tablesaw-mode-switch  data-tablesaw-mode="stack" class="tablesaw">
-                            <thead>
-                            <tr>
-                                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
-                                    class="tablesaw-cell-persist">Movie Title
-                                </th>
-                                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
-                                    scope="col">Rank
-                                </th>
-                                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
-                                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
-                                        title="Rotten Tomato Rating">Rating</abbr>
-                                </th>
-                                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
-                                </td>
-                                <td>1</td>
-                                <td>2009</td>
-                                <td>83%</td>
-                                <td>$2.7B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
-                                <td>2</td>
-                                <td>1997</td>
-                                <td>88%</td>
-                                <td>$2.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
-                                    Avengers</a></td>
-                                <td>3</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.5B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
-                                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
-                                <td>4</td>
-                                <td>2011</td>
-                                <td>96%</td>
-                                <td>$1.3B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
-                                </td>
-                                <td>5</td>
-                                <td>2013</td>
-                                <td>89%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
-                                </td>
-                                <td>6</td>
-                                <td>2013</td>
-                                <td>78%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
-                                    Moon</a></td>
-                                <td>7</td>
-                                <td>2011</td>
-                                <td>36%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
-                                    the
-                                    Rings: The Return of the King</a></td>
-                                <td>8</td>
-                                <td>2003</td>
-                                <td>95%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
-                                <td>9</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
-                                    Extinction</a></td>
-                                <td>10</td>
-                                <td>2014</td>
-                                <td>18%</td>
-                                <td>$1.0B</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>            </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Mode Switch Table</div>
+    <div class="panel-body">
+        <table data-tablesaw-mode-switch  data-tablesaw-mode="stack" class="tablesaw">
+            <thead>
+            <tr>
+                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
+                    class="tablesaw-cell-persist">Movie Title
+                </th>
+                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
+                    scope="col">Rank
+                </th>
+                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
+                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
+                        title="Rotten Tomato Rating">Rating</abbr>
+                </th>
+                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
+                </td>
+                <td>1</td>
+                <td>2009</td>
+                <td>83%</td>
+                <td>$2.7B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+                <td>2</td>
+                <td>1997</td>
+                <td>88%</td>
+                <td>$2.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
+                    Avengers</a></td>
+                <td>3</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.5B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
+                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
+                <td>4</td>
+                <td>2011</td>
+                <td>96%</td>
+                <td>$1.3B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
+                </td>
+                <td>5</td>
+                <td>2013</td>
+                <td>89%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
+                </td>
+                <td>6</td>
+                <td>2013</td>
+                <td>78%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
+                    Moon</a></td>
+                <td>7</td>
+                <td>2011</td>
+                <td>36%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
+                    the
+                    Rings: The Return of the King</a></td>
+                <td>8</td>
+                <td>2003</td>
+                <td>95%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
+                <td>9</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
+                    Extinction</a></td>
+                <td>10</td>
+                <td>2014</td>
+                <td>18%</td>
+                <td>$1.0B</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>            </div>
             <div class="col-xs-12 col-md-6">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Kitchen Sink</div>
-                    <div class="panel-body">
-                        <table data-tablesaw-mode-switch="" data-tablesaw-minimap="" data-tablesaw-sortable-switch="" data-tablesaw-sortable="" data-tablesaw-mode="swipe" class="tablesaw tablesaw-swipe tablesaw-sortable">
-                            <thead>
-                            <tr>
-                                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
-                                    class="tablesaw-cell-persist">Movie Title
-                                </th>
-                                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
-                                    scope="col">Rank
-                                </th>
-                                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
-                                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
-                                        title="Rotten Tomato Rating">Rating</abbr>
-                                </th>
-                                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
-                                </td>
-                                <td>1</td>
-                                <td>2009</td>
-                                <td>83%</td>
-                                <td>$2.7B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
-                                <td>2</td>
-                                <td>1997</td>
-                                <td>88%</td>
-                                <td>$2.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
-                                    Avengers</a></td>
-                                <td>3</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.5B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
-                                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
-                                <td>4</td>
-                                <td>2011</td>
-                                <td>96%</td>
-                                <td>$1.3B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
-                                </td>
-                                <td>5</td>
-                                <td>2013</td>
-                                <td>89%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
-                                </td>
-                                <td>6</td>
-                                <td>2013</td>
-                                <td>78%</td>
-                                <td>$1.2B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
-                                    Moon</a></td>
-                                <td>7</td>
-                                <td>2011</td>
-                                <td>36%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
-                                    the
-                                    Rings: The Return of the King</a></td>
-                                <td>8</td>
-                                <td>2003</td>
-                                <td>95%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
-                                <td>9</td>
-                                <td>2012</td>
-                                <td>92%</td>
-                                <td>$1.1B</td>
-                            </tr>
-                            <tr>
-                                <td class="title tablesaw-cell-persist"><a
-                                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
-                                    Extinction</a></td>
-                                <td>10</td>
-                                <td>2014</td>
-                                <td>18%</td>
-                                <td>$1.0B</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>            </div>
+<div class="panel panel-default">
+    <div class="panel-heading">Kitchen Sink</div>
+    <div class="panel-body">
+        <table data-tablesaw-mode-switch="" data-tablesaw-minimap="" data-tablesaw-sortable-switch="" data-tablesaw-sortable="" data-tablesaw-mode="swipe" class="tablesaw tablesaw-swipe tablesaw-sortable">
+            <thead>
+            <tr>
+                <th data-tablesaw-priority="persist" data-tablesaw-sortable-col="" scope="col"
+                    class="tablesaw-cell-persist">Movie Title
+                </th>
+                <th data-tablesaw-priority="3" data-tablesaw-sortable-default-col="" data-tablesaw-sortable-col=""
+                    scope="col">Rank
+                </th>
+                <th data-tablesaw-priority="2" data-tablesaw-sortable-col="" scope="col">Year</th>
+                <th data-tablesaw-priority="1" data-tablesaw-sortable-col="" scope="col"><abbr
+                        title="Rotten Tomato Rating">Rating</abbr>
+                </th>
+                <th data-tablesaw-priority="4" data-tablesaw-sortable-col="" scope="col">Gross</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Avatar_(2009_film)">Avatar</a>
+                </td>
+                <td>1</td>
+                <td>2009</td>
+                <td>83%</td>
+                <td>$2.7B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Titanic_(1997_film)">Titanic</a></td>
+                <td>2</td>
+                <td>1997</td>
+                <td>88%</td>
+                <td>$2.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/The_Avengers_(2012_film)">The
+                    Avengers</a></td>
+                <td>3</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.5B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Harry_Potter_and_the_Deathly_Hallows_%E2%80%93_Part_2">Harry
+                    Potter and the Deathly Hallows&mdash;Part 2</a></td>
+                <td>4</td>
+                <td>2011</td>
+                <td>96%</td>
+                <td>$1.3B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Frozen_(2013_film)">Frozen</a>
+                </td>
+                <td>5</td>
+                <td>2013</td>
+                <td>89%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Iron_Man_3">Iron Man 3</a>
+                </td>
+                <td>6</td>
+                <td>2013</td>
+                <td>78%</td>
+                <td>$1.2B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon">Transformers: Dark of the
+                    Moon</a></td>
+                <td>7</td>
+                <td>2011</td>
+                <td>36%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King">The Lord of
+                    the
+                    Rings: The Return of the King</a></td>
+                <td>8</td>
+                <td>2003</td>
+                <td>95%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a href="http://en.wikipedia.org/wiki/Skyfall">Skyfall</a></td>
+                <td>9</td>
+                <td>2012</td>
+                <td>92%</td>
+                <td>$1.1B</td>
+            </tr>
+            <tr>
+                <td class="title tablesaw-cell-persist"><a
+                        href="http://en.wikipedia.org/wiki/Transformers:_Age_of_Extinction">Transformers: Age of
+                    Extinction</a></td>
+                <td>10</td>
+                <td>2014</td>
+                <td>18%</td>
+                <td>$1.0B</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>            </div>
         </div>
     </div>
     <script src="../assets/javascripts/data/tables/tablesaw/init.js"></script>
