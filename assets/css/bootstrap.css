@@ -5826,6 +5826,8 @@ button.close {
   border-radius: 4px;
   z-index: 1000;
   width: 80px; }
+  .navbar-side.navbar .active {
+    background-color: #090909; }
   .navbar-side.navbar .hide-small-nav {
     transition: width 0.4s;
     transition-timing-function: ease-out;

@@ -21,8 +21,7 @@ function Pjax(linkElements, pjaxContent, loadingElement, animation) {
 			$(this).click(function (event) {
 				links.removeClass("active");
 				links.parent().removeClass("active");
-				$(this).addClass("active");
-				$(this).siblings().addClass("active");
+				$(this).parent().addClass("active");
 				history.pushState({}, null, this.href);
 				self.load(event, this.href);
 			});

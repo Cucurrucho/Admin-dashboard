@@ -9,6 +9,10 @@
 		z-index: 1000;
 		width: $navbar-side-small-width;
 
+		.active {
+			background-color: $navbar-inverse-link-active-bg;
+		}
+
 		.hide-small-nav {
 			transition: width 0.4s;
 			transition-timing-function: ease-out;
