@@ -52,7 +52,7 @@ gulp.task('mustache', function () {
 		}))
 		.pipe(mustache())
 		.pipe(gulp.dest('public'))
-		.pipe(notify({message: 'Hogan compiled', onLast: true}))
+		.pipe(notify({message: 'Html compiled', onLast: true}))
 		.pipe(browserSync.reload({stream: true}));
 });
 
