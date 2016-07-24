@@ -5823,7 +5823,7 @@ button.close {
   display: block;
   height: 100vh !important;
   position: fixed;
-  border-radius: 4px;
+  border-radius: 0px;
   z-index: 1000;
   width: 80px; }
   .navbar-side.navbar .hide-small-nav {
@@ -5889,6 +5889,10 @@ button.close {
     .navbar-side.navbar + .content-wrapper + .pjax-loading-container {
       margin-left: 80px;
       padding-left: 5px; }
+    .navbar-side.navbar + .content-wrapper .heading {
+      margin-left: -20px;
+      transition: width 0.4s, margin 0.4s, padding 0.4s;
+      transition-timing-function: ease-out; }
   .navbar-side.navbar.collapse:not(.in) .open .dropdown-menu.popup-dropdown {
     position: absolute;
     min-width: 250px;
@@ -5935,6 +5939,8 @@ button.close {
       .navbar-side.navbar.collapse.in + .content-wrapper + .pjax-loading-container {
         margin-left: 250px;
         padding-left: 15px; }
+      .navbar-side.navbar.collapse.in + .content-wrapper .heading {
+        margin-left: -30px; }
   .navbar-side.navbar.collapsing {
     width: 165px;
     transition-timing-function: ease-in; }
@@ -5963,6 +5969,8 @@ button.close {
       margin-left: 165px;
       transition-timing-function: ease-in;
       padding-left: 7.5px; }
+      .navbar-side.navbar.collapsing + .content-wrapper .heading {
+        margin-left: -24.7px; }
   @media (max-width: 768px) {
     .navbar-side.navbar {
       width: 0px;
@@ -6033,6 +6041,8 @@ button.close {
           .navbar-side.navbar.collapse.in + .content-wrapper + .pjax-loading-container {
             margin-left: 80px;
             padding-left: 5px; }
+          .navbar-side.navbar.collapse.in + .content-wrapper .heading {
+            margin-left: -20px; }
       .navbar-side.navbar.collapsing {
         width: 40px; }
         .navbar-side.navbar.collapsing .hide-small-nav {
@@ -10125,5 +10135,91 @@ div.dataTables_wrapper span.select-item {
   top: 40%; }
   .pjax-loading-content .fa-spin {
     font-size: 48px; }
+
+.heading {
+  margin-left: -30px;
+  background-color: goldenrod;
+  height: 60px;
+  width: 110%;
+  margin-bottom: 10px; }
+  .heading > * {
+    display: inline-block;
+    margin: 10px; }
+  .heading .profile-img-heading {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    border: 2px solid black; }
+  .heading .breadcrumb {
+    background-color: goldenrod;
+    margin-right: 10px; }
+  @media (max-width: 768px) {
+    .heading {
+      width: 115%; } }
+
+.btn-heading {
+  color: #333;
+  background-color: goldenrod;
+  border-color: #333; }
+  .btn-heading:focus, .btn-heading.focus {
+    color: #333;
+    background-color: #ae8319;
+    border-color: black; }
+  .btn-heading:hover {
+    color: #333;
+    background-color: #ae8319;
+    border-color: #141414; }
+  .btn-heading:active, .btn-heading.active,
+  .open > .btn-heading.dropdown-toggle {
+    color: #333;
+    background-color: #ae8319;
+    border-color: #141414; }
+    .btn-heading:active:hover, .btn-heading:active:focus, .btn-heading:active.focus, .btn-heading.active:hover, .btn-heading.active:focus, .btn-heading.active.focus,
+    .open > .btn-heading.dropdown-toggle:hover,
+    .open > .btn-heading.dropdown-toggle:focus,
+    .open > .btn-heading.dropdown-toggle.focus {
+      color: #333;
+      background-color: #8e6c15;
+      border-color: black; }
+  .btn-heading:active, .btn-heading.active,
+  .open > .btn-heading.dropdown-toggle {
+    background-image: none; }
+  .btn-heading.disabled:hover, .btn-heading.disabled:focus, .btn-heading.disabled.focus, .btn-heading[disabled]:hover, .btn-heading[disabled]:focus, .btn-heading[disabled].focus,
+  fieldset[disabled] .btn-heading:hover,
+  fieldset[disabled] .btn-heading:focus,
+  fieldset[disabled] .btn-heading.focus {
+    background-color: goldenrod;
+    border-color: #333; }
+  .btn-heading .badge {
+    color: goldenrod;
+    background-color: #333; }
+
+.extended-profile {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 4px;
+  top: 50px;
+  left: 50px;
+  width: 300px;
+  height: 200px;
+  z-index: 99999;
+  display: none;
+  background-color: #F0EBEB; }
+  .extended-profile .profile-img-extended {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    padding-right: 5px; }
+  .extended-profile > ul {
+    margin-top: 30px; }
+    .extended-profile > ul > li {
+      margin: 5px; }
+  @media (max-width: 768px) {
+    .extended-profile {
+      top: 50px;
+      left: 0px;
+      margin: 0;
+      max-width: 100%; } }
 
 /*# sourceMappingURL=maps/bootstrap.css.map */
