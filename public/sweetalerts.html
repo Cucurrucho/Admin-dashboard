@@ -42,7 +42,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="dropdown open">
+            <li class="dropdown ">
                 <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts<span class="caret"></span></a>
                 <ul class="dropdown-menu popup-dropdown">
@@ -56,11 +56,11 @@
                     </li>
                 </ul>
             </li>
-            <li class="dropdown ">
+            <li class="dropdown open">
                 <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-exclamation-triangle"></span> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alerts<span class="caret"></span></a>
                 <ul class="dropdown-menu popup-dropdown">
-                    <li class="">
+                    <li class="active">
                         <a href="..\public\sweetalerts.html" class="hide-big-nav"><i class="fa fa-cogs" aria-hidden="true"></i></a>
                         <a href="..\public\sweetalerts.html" class="hide-small-nav">Sweet alerts</a>
                     </li>
@@ -95,73 +95,18 @@
     <script src="../assets/javascripts/data/heading/heading-button.js"></script>
     <script src="../assets/javascripts/data/heading/show-profile.js"></script>
 </div>        <div class="row">
-            <div class="col-xs-12 col-md-6">
-<div class="panel panel-default">
-    <div class="panel-heading">Line Chart</div>
-    <div class="panel-body">
-        <canvas id="lineChart" width="250" height="150"></canvas>
-    </div>
-
-    <script src="../assets/javascripts/data/charts/chartjs/linechart.js"></script>
-</div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-<div class="panel panel-default">
-    <div class="panel-heading">Line Chart</div>
-    <div class="panel-body">
-        <canvas id="barChart" width="250" height="150"></canvas>
-    </div>
-
-    <script src="../assets/javascripts/data/charts/chartjs/barchart.js"></script>
-</div>
-            </div>
-        </div>
+<button type="button" class="btn btn-danger btn-lg" style="margin: 10px" onclick="errorMSG()">Show simple error message</button>
+<script src="../assets/javascripts/data/alerts/sweetalerts/errorMsg.js"></script>        </div>
         <div class="row">
-            <div class="col-xs-12 col-md-6">
-<div class="panel panel-default">
-    <div class="panel-heading">Radar Chart</div>
-    <div class="panel-body">
-        <canvas id="radarChart" width="250" height="150"></canvas>
-    </div>
-
-    <script src="../assets/javascripts/data/charts/chartjs/radarchart.js"></script>
-</div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-<div class="panel panel-default">
-    <div class="panel-heading">Polar Area Chart</div>
-    <div class="panel-body">
-        <canvas id="polarChart" width="250" height="150"></canvas>
-    </div>
-
-    <script src="../assets/javascripts/data/charts/chartjs/polararea.js"></script>
-</div>
-            </div>
-        </div>
+<button type="button" class="btn btn-success btn-lg" style="margin: 10px" onclick="successMsg()">Show simple success message</button>
+<script src="../assets/javascripts/data/alerts/sweetalerts/successMsg.js"></script>        </div>
         <div class="row">
-            <div class="col-xs-12 col-md-6">
-<div class="panel panel-default">
-    <div class="panel-heading">Donut Chart</div>
-    <div class="panel-body">
-        <canvas id="donutChart" width="250" height="150"></canvas>
+<button type="button" class="btn btn-danger btn-lg" style="margin: 10px" onclick="warningWithFunction()">Warning with function on confirm</button>
+<script src="../assets/javascripts/data/alerts/sweetalerts/warningMsgWithFunction.js"></script>        </div>
+        <div class="row">
+<button type="button" class="btn btn-default btn-lg" style="margin: 10px" onclick="timedModal()">Timed alert</button>
+<script src="../assets/javascripts/data/alerts/sweetalerts/timedModal.js"></script>        </div>
     </div>
-
-    <script src="../assets/javascripts/data/charts/chartjs/donutchart.js"></script>
-</div>
-            </div>
-            <div class="col-xs-12 col-md-6">
-<div class="panel panel-default">
-    <div class="panel-heading">Pie Chart</div>
-    <div class="panel-body">
-        <canvas id="pieChart" width="250" height="150"></canvas>
-    </div>
-
-    <script src="../assets/javascripts/data/charts/chartjs/pieChart.js"></script>
-</div>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="pjax-loading-container">
     <span class="pjax-loading-content">
         <i class="fa fa-gear fa-spin"></i>

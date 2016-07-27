@@ -1,0 +1,20 @@
+{{>partials/header}}
+{{>partials/navbar}}
+<div class="content-wrapper">
+    <div class="container-fluid">
+        {{>partials/heading}}
+        <div class="row">
+            {{>alerts/sweetalerts/errormsg}}
+        </div>
+        <div class="row">
+            {{>alerts/sweetalerts/successmsg}}
+        </div>
+        <div class="row">
+            {{>alerts/sweetalerts/warningWithFunction}}
+        </div>
+        <div class="row">
+            {{>alerts/sweetalerts/timedModal}}
+        </div>
+    </div>
+{{>partials/loading}}
+{{>partials/footer}}
