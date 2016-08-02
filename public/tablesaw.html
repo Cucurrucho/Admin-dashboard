@@ -56,6 +56,16 @@
                     </li>
                 </ul>
             </li>
+            <li class="dropdown ">
+                <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-exclamation-triangle"></span> <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Alerts<span class="caret"></span></a>
+                <ul class="dropdown-menu popup-dropdown">
+                    <li class="">
+                        <a href="..\public\sweetalerts.html" class="hide-big-nav"><i class="fa fa-cogs" aria-hidden="true"></i></a>
+                        <a href="..\public\sweetalerts.html" class="hide-small-nav">Sweet alerts</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
         <form class="navbar-form" role="search">
             <div class="form-group">
@@ -66,7 +76,25 @@
     </div><!-- /.container-fluid -->
 </nav><div class="content-wrapper">
     <div class="container-fluid">
-        <div class="row">
+<div  class="heading">
+    <button type="button" id="nav-btn" class="fa fa-toggle-on fa-2x btn-heading" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-hidden="true">
+    </button>
+    <img class="img-circle img-responsive profile-img-heading" src="../assets/images/profile_pic.jpg">
+    <div class="extended-profile">
+        <img class="img-responsive profile-img-extended" src="../assets/images/profile_pic.jpg">
+        <ul>
+            <li><a href="#">Link to profile page</a></li>
+            <li>info about profile</li>
+        </ul>
+    </div>
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Tables</a></li>
+        <li><a href="#">Charts</a></li>
+    </ol>
+    <script src="../assets/javascripts/data/heading/heading-button.js"></script>
+    <script src="../assets/javascripts/data/heading/show-profile.js"></script>
+</div>        <div class="row">
             <div class="col-xs-12 col-md-6">
 <div class="panel panel-default">
     <div class="panel-heading">Stack Table</div>

@@ -1,6 +1,7 @@
 .heading {
 	margin-left: -30px;
 	background-color: $heading-color;
+	background: $heading-gradient;
 	height: 60px;
 	width: 110%;
 	margin-bottom: 10px;
@@ -18,8 +19,11 @@
 	}
 
 	.breadcrumb {
-		background-color: $heading-color;
+		background-color: transparent;
 		margin-right: 10px;
+		a{
+			color: white;
+		}
 	}
 	@media (max-width: $grid-float-breakpoint) {
 		width: 115%;

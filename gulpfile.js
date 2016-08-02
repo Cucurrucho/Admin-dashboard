@@ -30,7 +30,7 @@ gulp.task('sass', function () {
 		.pipe(sourcemaps.write('maps'))
 		.pipe(gulp.dest('assets/css/'))
 		.pipe(notify({message: 'SASS compiled', onLast: true}))
-		.pipe(browserSync.reload({stream: true}));
+		.pipe(browserSync.stream({match: "**/*.css"}));
 });
 
 gulp.task('js', function () {
@@ -40,7 +40,7 @@ gulp.task('js', function () {
 		.pipe(concat('main.js', {newLine: ''}))
 		.pipe(gulp.dest("assets/javascripts"))
 		.pipe(notify({message: 'Js Updated', onLast: true}))
-		.pipe(browserSync.reload({stream: true}));
+		.pipe(browserSync.stream({match: "**/*.js"}));
 });
 
 
