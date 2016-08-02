@@ -1,4 +1,5 @@
 function Pjax(linkElements, pjaxContent, loadingElement, animation) {
+	console.log("here");
 	this.contentWrapper = pjaxContent;
 	this.loadingElement = loadingElement || "";
 	this.effect = {};
