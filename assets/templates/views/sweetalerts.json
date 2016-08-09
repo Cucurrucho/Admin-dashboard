@@ -1,4 +1,6 @@
 {
   "sweetalerts" : "active",
-  "alerts" : "open"
+  "alerts" : "open",
+  "category" : "Alerts",
+  "title" : "Sweet Alerts"
 }

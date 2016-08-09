@@ -1,4 +1,6 @@
 {
   "statictables" : "active",
-  "tables" : "open"
+  "tables" : "open",
+  "category" : "Tables",
+  "title" : "Statictables"
 }

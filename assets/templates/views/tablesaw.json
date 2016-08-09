@@ -1,4 +1,6 @@
 {
   "tablesaw" : "active",
-  "tables" : "open"
+  "tables" : "open",
+  "category" : "Tables",
+  "title" : "Tablesaw"
 }

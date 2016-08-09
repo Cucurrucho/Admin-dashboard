@@ -14,7 +14,8 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('browser-sync', function () {
 	browserSync.init({
-		proxy: "localhost/admin-dashboard/public"
+		proxy: "localhost/admin-dashboard/public",
+		files: ["assets/css/bootstrap.css"]
 	});
 });
 
@@ -30,7 +31,6 @@ gulp.task('sass', function () {
 		.pipe(sourcemaps.write('maps'))
 		.pipe(gulp.dest('assets/css/'))
 		.pipe(notify({message: 'SASS compiled', onLast: true}))
-		.pipe(browserSync.stream({match: "**/*.css"}));
 });
 
 gulp.task('js', function () {

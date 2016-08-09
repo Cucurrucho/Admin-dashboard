@@ -1,4 +1,6 @@
 {
   "datatables" : "active",
-  "tables" : "open"
+  "tables" : "open",
+  "category" : "Tables",
+  "title" : "Datatables"
 }
