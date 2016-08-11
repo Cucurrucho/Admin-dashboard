@@ -46,7 +46,7 @@
                 <a href="#" class="dropdown-toggle  hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Charts<span class="caret"></span></a>
                 <ul class="dropdown-menu popup-dropdown">
-                    <li class="">
+                    <li class="active">
                         <a href="..\public\chartjs.html" class="hide-big-nav"><i class="fa fa-area-chart" aria-hidden="true"> Chartsjs</i></a>
                         <a href="..\public\chartjs.html" class="hide-small-nav">Chartjs</a>
                     </li>
@@ -88,12 +88,13 @@
         </ul>
     </div>
     <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tables</a></li>
-        <li><a href="#">Charts</a></li>
+        <li><a href="index.html">Home</a></li>
+            <li><a href="#">Charts</a></li>
+        <li><a href="#">Charjs</a></li>
     </ol>
     <script src="../assets/javascripts/data/heading/heading-button.js"></script>
     <script src="../assets/javascripts/data/heading/show-profile.js"></script>
+    <script>new Pjax([".breadcrumb"],".content-wrapper",".pjax-loading-container")</script>
 </div>        <div class="row">
             <div class="col-xs-12 col-md-6">
 <div class="panel panel-default">

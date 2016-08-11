@@ -10,10 +10,13 @@
         </ul>
     </div>
     <ol class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tables</a></li>
-        <li><a href="#">Charts</a></li>
+        <li><a href="index.html">Home</a></li>
+        {{#category}}
+            <li><a href="#">{{category}}</a></li>
+        {{/category}}
+        <li><a href="#">{{title}}</a></li>
     </ol>
     <script src="../assets/javascripts/data/heading/heading-button.js"></script>
     <script src="../assets/javascripts/data/heading/show-profile.js"></script>
+    <script>new Pjax([".breadcrumb"],".content-wrapper",".pjax-loading-container")</script>
 </div>

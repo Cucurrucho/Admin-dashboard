@@ -1,4 +1,6 @@
 {
   "sparklinecharts" : "active",
-  "charts" : "open"
+  "charts" : "open",
+  "category" : "Charts",
+  "title" : "Sparkline Charts"
 }

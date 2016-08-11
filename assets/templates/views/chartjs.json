@@ -1,4 +1,6 @@
 {
-  "charts" : "active",
-  "charts" : "open"
+  "chartjs" : "active",
+  "charts" : "open",
+  "category" : "Charts",
+  "title" : "Charjs"
 }
