@@ -24,11 +24,11 @@
                 <a class="hide-big-nav" href="..\public\index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
                 <a class="hide-small-nav" href="..\public\index.html">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="dropdown open">
+            <li class="dropdown ">
                 <a href="#" class="dropdown-toggle hide-big-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-table" aria-hidden="true"></i> <span class="caret"></span></a>
                 <a href="#" class="dropdown-toggle hide-small-nav" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tables<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li class="active">
+                    <li class="">
                         <a href="..\public\statictables.html" class="hide-big-nav"><i class="fa fa-th-list" aria-hidden="true"></i></a>
                         <a href="..\public\statictables.html" class="hide-small-nav">Static Tables</a>
                     </li>
@@ -56,7 +56,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="">
+            <li class="open">
                 <a class="hide-big-nav" href="..\public\alerts.html"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
                 <a class="hide-small-nav" href="..\public\alerts.html">Alerts<span class="sr-only">(current)</span></a>
             </li>
@@ -69,7 +69,6 @@
         </form>
     </div><!-- /.container-fluid -->
 </nav><div class="content-wrapper">
-    <div class="container-fluid">
 <div  class="heading">
     <button type="button" id="nav-btn" class="fa fa-toggle-on fa-2x btn-heading" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-hidden="true">
     </button>
@@ -83,197 +82,49 @@
     </div>
     <ol class="breadcrumb">
         <li><a href="index.html">Home</a></li>
-            <li><a href="#">Tables</a></li>
-        <li><a href="#">Statictables</a></li>
+            <li><a href="#">Alerts</a></li>
+        <li><a href="#">Sweet Alerts</a></li>
     </ol>
     <script src="../assets/javascripts/data/heading/heading-button.js"></script>
     <script src="../assets/javascripts/data/heading/show-profile.js"></script>
     <script>new Pjax([".breadcrumb"],".content-wrapper",".pjax-loading-container")</script>
-</div>        <div class="row">
-            <div class="panel panel-default col-xs-12 col-md-6">
-<div class="panel-heading">Basic Table</div>
-<div class="panel-body table-responsive">
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-        </tr>
-        </tbody>
-    </table>
-</div>            </div>
-            <div class="panel panel-default col-xs-12 col-md-6">
-<div class="panel-heading">Bordered Table</div>
-<div class="panel-body table-responsive">
-    <table class="table table-bordered">
-        <thead>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-        </tr>
-        </tbody>
-    </table>
-</div>            </div>
+</div>    <div class="panel panel-default">
+        <div class="panel-heading">Sweet Alerts</div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+<button type="button" class="btn btn-danger btn-lg" style="margin: 10px" onclick="errorMSG()">Show simple error message</button>
+<script src="../assets/javascripts/data/alerts/sweetalerts/errorMsg.js"></script>                </div>
+                <div class="row">
+<button type="button" class="btn btn-success btn-lg" style="margin: 10px" onclick="successMsg()">Show simple success message</button>
+<script src="../assets/javascripts/data/alerts/sweetalerts/successMsg.js"></script>                </div>
+                <div class="row">
+<button type="button" class="btn btn-danger btn-lg" style="margin: 10px" onclick="warningWithFunction()">Warning with function on confirm</button>
+<script src="../assets/javascripts/data/alerts/sweetalerts/warningMsgWithFunction.js"></script>                </div>
+                <div class="row">
+<button type="button" class="btn btn-default btn-lg" style="margin: 10px" onclick="timedModal()">Timed alert</button>
+<script src="../assets/javascripts/data/alerts/sweetalerts/timedModal.js"></script>                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="panel panel-default col-xs-12 col-md-6">
-<div class="panel-heading">Colored Table</div>
-<div class="panel-body table-responsive">
-    <table class="table">
-        <thead>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="success">
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr class="danger">
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr class="info">
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-        </tr>
-        </tbody>
-    </table>
-</div>            </div>
-            <div class="panel panel-default col-xs-12 col-md-6">
-<div class="panel-heading">Striped Rows</div>
-<div class="panel-body table-responsive">
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-        </tr>
-        </tbody>
-    </table>
-</div>            </div>
-        </div>
-        <div class="row">
-            <div class="panel panel-default col-xs-12 col-md-6">
-<div class="panel-heading">Hover Rows</div>
-<div class="panel-body table-responsive">
-    <table class="table table-hover">
-        <thead>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-        </tr>
-        </tbody>
-    </table>
-</div>            </div>
-            <div class="panel panel-default col-xs-12 col-md-6">
-<div class="panel-heading">Combiend Table</div>
-<div class="panel-body table-responsive">
-    <table class="table table-hover table-bordered table-striped">
-        <thead>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-        </tr>
-        </tbody>
-    </table>
-</div>            </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Amaran</div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+<button type="button" class="btn btn-primary btn-lg" style="margin: 10px" onclick="basicMSg()">Show basic Amaran message</button>
+<script src="../assets/javascripts/data/alerts/amaran/basicMsg.js"></script>                </div>
+                <div class="row">
+<button type="button" class="btn btn-info btn-lg" style="margin: 10px" onclick="multipleEffects()">Show Message with multiple effects and positions</button>
+<script src="../assets/javascripts/data/alerts/amaran/multipleEffects.js"></script>
+                </div>
+                <div class="row">
+<button type="button" class="btn btn-success btn-lg" style="margin: 10px" onclick="stickyMsg()">Show sticky message</button>
+<script src="../assets/javascripts/data/alerts/amaran/stickyMsg.js"></script>                </div>
+                <div class="row">
+<button type="button" class="btn btn-danger btn-lg" style="margin: 10px" onclick="cssAnimation()">Show massage with Animate effects</button>
+<script src="../assets/javascripts/data/alerts/amaran/cssAnimation.js"></script>                </div>
+            </div>
         </div>
     </div>
 </div>

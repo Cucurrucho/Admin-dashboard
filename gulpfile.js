@@ -58,7 +58,7 @@ gulp.task('mustache', function () {
 
 gulp.task('default', ['sass', 'mustache', 'js', 'browser-sync'], function () {
 
-	gulp.watch("assets/stylesheets/extras/*.scss", ['sass']);
+	gulp.watch(["assets/stylesheets/extras/*.scss","assets/stylesheets/bootstrap.scss"], ['sass']);
 	gulp.watch("assets/javascripts/extras/*.js", ['js']);
 	gulp.watch(["assets/templates/**/*.html","assets/templates/**/*.mustache","assets/templates/**/*.json"], ['mustache']);
 });

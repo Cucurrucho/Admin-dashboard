@@ -1,0 +1,45 @@
+{{>partials/header}}
+{{>partials/navbar}}
+<div class="content-wrapper">
+    {{>partials/heading}}
+    <div class="panel panel-default">
+        <div class="panel-heading">Sweet Alerts</div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+                    {{>alerts/sweetalerts/errormsg}}
+                </div>
+                <div class="row">
+                    {{>alerts/sweetalerts/successmsg}}
+                </div>
+                <div class="row">
+                    {{>alerts/sweetalerts/warningWithFunction}}
+                </div>
+                <div class="row">
+                    {{>alerts/sweetalerts/timedModal}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">Amaran</div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+                    {{>alerts/amaran/basicMsg}}
+                </div>
+                <div class="row">
+                    {{>alerts/amaran/multipleEffects}}
+                </div>
+                <div class="row">
+                    {{>alerts/amaran/stickyMsg}}
+                </div>
+                <div class="row">
+                    {{>alerts/amaran/cssAnimation}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{>partials/loading}}
+{{>partials/footer}}
